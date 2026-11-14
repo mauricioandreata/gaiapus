@@ -1,0 +1,110 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mils",
+    "date": "2026-11-14T09:50:02-0300",
+    "kicad_version": "8.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8/9cb16a4a-aa5b-54b1-8ec0-e5d0e0b688a8",
+            "violations": [
+                {
+                    "description": "Os pinos do tipo Alimentação de saída e Bidirecional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol BT1 Pino 1 [+, Alimentação de saída, Linha]",
+                            "pos": {
+                                "x": 13.5,
+                                "y": 53.5
+                            },
+                            "uuid": "6c9da97a-2a28-50f2-b2f7-0eddc9c17878"
+                        },
+                        {
+                            "description": "Symbol U1 Pino 5 [BAT, Bidirecional, Linha]",
+                            "pos": {
+                                "x": 79.5,
+                                "y": 20.0
+                            },
+                            "uuid": "504a18ad-94da-529e-8958-1dd2455c1f34"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8/3dcd2774-e7c4-52db-93ee-148d91a2d58e",
+            "violations": []
+        },
+        {
+            "path": "/LoRa/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8/3f76fe11-40e9-5591-a3a7-d57b323c9939",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8/506e8b63-818c-54ea-b113-5eca631b66d1",
+            "violations": [
+                {
+                    "description": "Os pinos do tipo Alimentação de saída e Bidirecional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG04 Pino oculto 1 [pwr, Alimentação de saída, Linha]",
+                            "pos": {
+                                "x": 30.0,
+                                "y": 10.0
+                            },
+                            "uuid": "d238dea6-cf08-567f-9576-f068b4e7faa1"
+                        },
+                        {
+                            "description": "Symbol U4 Pino 19 [IO15, Bidirecional, Linha]",
+                            "pos": {
+                                "x": 86.5,
+                                "y": 77.0
+                            },
+                            "uuid": "d33c2d7e-472c-5599-b1c3-b3cefc6163cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Os pinos do tipo Alimentação de saída e Bidirecional estão conectados",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG05 Pino oculto 1 [pwr, Alimentação de saída, Linha]",
+                            "pos": {
+                                "x": 98.0,
+                                "y": 10.0
+                            },
+                            "uuid": "8a7fb2ac-37fa-5274-a886-8c9d5a410c50"
+                        },
+                        {
+                            "description": "Symbol U4 Pino 20 [IO16, Bidirecional, Linha]",
+                            "pos": {
+                                "x": 86.5,
+                                "y": 78.0
+                            },
+                            "uuid": "f8096ccf-94d1-5a6e-963d-62ef5eb1706d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Interface/",
+            "uuid_path": "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8/d8ef6a99-d0b7-59c1-8ac8-f188e34242f9",
+            "violations": []
+        }
+    ],
+    "source": "gaiapus-node.kicad_sch"
+}

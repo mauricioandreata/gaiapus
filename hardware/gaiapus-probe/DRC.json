@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-14T12:20:35-0300",
+    "kicad_version": "8.0.8",
+    "schematic_parity": [],
+    "source": "gaiapus-probe.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "A conexão do alívio térmico na região está incompleta (camada F.Cu; zona quantidade de raio mín 2; atual 1)",
+            "items": [
+                {
+                    "description": "Região [GND] no F.Cu",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 498.0
+                    },
+                    "uuid": "2929d395-a91d-57e7-9def-af59a175d975"
+                },
+                {
+                    "description": "Ilha 2 [GND] de C2 no F.Cu",
+                    "pos": {
+                        "x": 118.775,
+                        "y": 196.0
+                    },
+                    "uuid": "abd5908f-4ecd-40e7-9264-b7e692e9260e"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        }
+    ]
+}

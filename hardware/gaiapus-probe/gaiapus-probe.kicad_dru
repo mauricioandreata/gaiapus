@@ -1,0 +1,23 @@
+(version 1)
+# JLCPCB 2-layer, 1.6 mm, 1 oz (standard process). Conservative margins over the published minimums.
+(rule "JLC track width"     (constraint track_width (min 0.15mm)))
+(rule "JLC clearance"       (constraint clearance (min 0.15mm)))
+(rule "JLC via"             (constraint via_diameter (min 0.5mm)) (constraint hole_size (min 0.3mm)))
+(rule "JLC annular ring"    (constraint annular_width (min 0.13mm)))
+(rule "JLC hole to hole"    (constraint hole_to_hole (min 0.5mm)))
+(rule "JLC copper to edge"  (constraint edge_clearance (min 0.3mm)))
+(rule "JLC silk"            (layer "?.Silkscreen") (constraint text_height (min 0.8mm)) (constraint text_thickness (min 0.15mm)))
+
+# Sensing nodes (electrode comb A + oscillator input): keep GND copper away, every pF here is an offset
+(rule "electrode isolation (GND pour only)"
+  (condition "A.NetName == '*OSC*_A' && B.NetName == 'GND' && B.Type == 'Zone'")
+  (constraint clearance (min 1.5mm)))
+# Frequency lines running up the strip: GND guard tracks on both sides, short stubs only
+(rule "frequency lines" (condition "A.NetName == '*OSC*_FREQ'") (constraint track_width (min 0.2mm)))
+(rule "power to oscillators" (condition "A.NetName == '*PWR_OSC*' || A.NetName == '*PWR_NTC'") (constraint track_width (min 0.3mm)))
+
+# C2/C4 = DNP 10 pF range-trim caps at the strip edge: the GND pour could only reach them with one
+# thermal spoke. Not normally fitted, so a solid pour connection is fine (and avoids the spoke check).
+(rule "trim caps: solid pour connection"
+  (condition "A.memberOfFootprint('C2') || A.memberOfFootprint('C4')")
+  (constraint zone_connection solid))

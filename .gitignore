@@ -1,0 +1,20 @@
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+\#auto_saved_files\#
+_autosave-*
+*.bak
+*-bak
+gerbers/*.zip
+# Firmware
+.pio/
+build/
+.vscode/
+# Python
+__pycache__/
+*.pyc
+# SO
+Thumbs.db
+.DS_Store

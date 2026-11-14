@@ -1,0 +1,22 @@
+(version 1)
+# JLCPCB 4-layer (JLC04161H-7628), 1.6 mm, 1 oz outer. In1 = GND plane, In2 = +3V3 plane. Conservative margins over the published minimums.
+(rule "JLC track width"     (constraint track_width (min 0.15mm)))
+(rule "JLC clearance"       (constraint clearance (min 0.15mm)))
+(rule "JLC via"             (constraint via_diameter (min 0.5mm)) (constraint hole_size (min 0.3mm)))
+(rule "JLC annular ring"    (constraint annular_width (min 0.13mm)))
+(rule "JLC hole to hole"    (constraint hole_to_hole (min 0.5mm)))
+(rule "JLC copper to edge"  (constraint edge_clearance (min 0.3mm)))
+(rule "JLC silk"            (layer "?.Silkscreen") (constraint text_height (min 0.8mm)) (constraint text_thickness (min 0.15mm)))
+
+# Power paths (battery, solar, 3.3 V, buck-boost switch nodes): wide and short
+(rule "power nets"
+  (condition "A.NetName == 'VBAT' || A.NetName == '+3V3' || A.NetName == 'VSOL' || A.NetName == 'VBUS' || A.NetName == '*BATT_N' || A.NetName == '*PROT_D' || A.NetName == '*SW_L*'")
+  (constraint track_width (min 0.4mm) (opt 0.6mm)))
+# LoRa RF path: ANT pad -> 0R -> U.FL, microstrip on F.Cu over the solid In1 GND plane (prepreg ~0.21 mm).
+# 0.35 mm is an ESTIMATE for 50 ohm: confirm with the JLCPCB impedance calculator (4 layers, JLC04161H-7628).
+(rule "RF 50 ohm (estimate)"
+  (condition "A.NetName == '*RF_MOD' || A.NetName == '*RF_ANT'")
+  (constraint track_width (min 0.3mm) (opt 0.35mm))
+  (constraint clearance (min 0.3mm)))
+# Battery protection current sense: no thin traces
+(rule "protection sense" (condition "A.NetName == '*PROT_CS'") (constraint track_width (min 0.25mm)))

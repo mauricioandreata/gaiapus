@@ -1,0 +1,25 @@
+Ref,Qty,Description,Value,Footprint,Manufacturer,MPN,LCSC,Price_1pc_USD,Price_1k_USD,Note
+U1,1,MCU module Wi-Fi/BLE,ESP32-S3-MINI-1-N8,,Espressif,ESP32-S3-MINI-1-N8,C2913206,,3.26,
+U2,1,LoRa module SX1262 915MHz,E22-900MM22S,,EBYTE,E22-900MM22S,C5333985,,,price to confirm
+U3,1,LiFePO4 charger,CN3058E,SOP-8-EP,Consonance,CN3058E,C112011,0.39,0.28,
+U4,1,LiFePO4 protection,HY2112-BB,SOT-23-6,HYCON,HY2112-BB,C161942,,,needs FS8205A
+U5,1,Buck-boost 3V3,TPS63802,VSON-10,TI,TPS63802DLAR,C2845237,1.00,0.64,
+U6,1,Air T/RH sensor,SHT40,DFN-4,Sensirion,SHT40-AD1B-R2,C2909890,1.72,,
+U7-U8,2,Schmitt inverter (probe osc.),74LVC1G14,SOT-753,Nexperia,"74LVC1G14GV,125",C131093,,0.04,on the probe board
+RT1-RT2,2,NTC 10k B3380,NCP18XH103F03RB,0603,Murata,NCP18XH103F03RB,C13564,0.03,0.02,on the probe board; NRND - pick equivalent
+J1,1,USB-C 16P,TYPE-C-31-M-12,SMD,HRO,TYPE-C-31-M-12,C165948,,0.17,
+D1,1,USB ESD,USBLC6-2SC6,SOT-23-6,ST,USBLC6-2SC6,C7519,0.11,0.06,
+BT1,1,18650 holder SMD,BH-18650-B1BA002,SMD,MYOUNG,BH-18650-B1BA002,C2988620,,,alt Keystone 1042P
+D2-D4,3,LEDs green/yellow/red,,0603,,,,,,commodity
+SW1,1,Tactile button,,SMD,,,,,,commodity
+J3-J4,2,JST-SH 2P SMD (rain / solar),,SMD,JST,,,,,commodity
+L1,1,Inductor 0.47uH,,,,,,,,for TPS63802
+Q1,1,Dual N-MOSFET (common drain),8205A,TSSOP-8,HXY MOSFET,8205A,C5148694,,,Fortune FS8205A (C16052) discontinued at LCSC; same TSSOP-8 pinout
+SP1,1,Solar panel 5V 60mA epoxy 68x37 mm (off-board),5V/60mA,Wires + JST-SH 2P,AMX Solar / generic,SP-68x37 (or equivalent),n/a,4.96,~1.00,"Voc 6.0-6.3 V, clamped by D5 (6.2 V); price at 1k to confirm"
+D5,1,Zener clamp on solar input,BZT52C6V2,SOD-123,,BZT52C6V2,,,,clamp under CN3058E abs max 6.5 V
+D6,1,Schottky USB-to-VSOL OR-ing,B5819W,SOD-123,,B5819W,,,,"optional, USB charging/programming"
+J5,1,U.FL RF connector (required),U.FL-R-SMT-1(80),U.FL SMD,Hirose,U.FL-R-SMT-1(80),C88374,,,E22-900MM22S has only an ANT pad: 0R + U.FL on board
+R/C,~35,Resistors/capacitors 0603/0805,see bom_from_schematic.csv,0603/0805,,,JLCPCB basic,,,values fixed in schematic
+"J6,J1(probe)",2,Head<->probe connector JST-SH 10P side entry,SM10B-SRSS-TB(LF)(SN),SMD,JST,SM10B-SRSS-TB(LF)(SN),C160409,,,one on each board
+CBL1,1,"JST-SH 10P cable, 1:1, ~15 cm",,,,,,,,off-board; confirm pin1-to-pin1
+PCB2,1,"Probe PCB strip 22 x ~460 mm, 2 layers",,,JLCPCB,,,,,check JLCPCB long-board size/fee

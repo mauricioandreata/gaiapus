@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "gaiapus")(type "KiCad")(uri "${KIPRJMOD}/../lib/footprints/gaiapus.pretty")(options "")(descr "Footprints do projeto Gaiapus"))
+	(lib (name "lcsc")(type "KiCad")(uri "${KIPRJMOD}/../lib/lcsc.pretty")(options "")(descr "Imported from LCSC/EasyEDA by import_lcsc.cmd"))
+)

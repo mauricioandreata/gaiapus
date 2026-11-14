@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "author": "Team Gaiapus",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_m15",
+      "top": -150,
+      "left": -260,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_m40",
+      "top": -150,
+      "left": -160,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_bat",
+      "top": -150,
+      "left": -60,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc15",
+      "top": 30,
+      "left": -330,
+      "attrs": {
+        "temperature": "26.4"
+      }
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc40",
+      "top": 100,
+      "left": -330,
+      "attrs": {
+        "temperature": "24.85"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": 180,
+      "left": -260,
+      "attrs": {
+        "temperature": "31.2",
+        "humidity": "58"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_rain",
+      "top": 300,
+      "left": -260,
+      "attrs": {
+        "color": "blue",
+        "label": "RAIN TIP"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_user",
+      "top": 300,
+      "left": -140,
+      "attrs": {
+        "color": "black",
+        "label": "BUTTON"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_g",
+      "top": 60,
+      "left": 230,
+      "attrs": {
+        "value": "470"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_y",
+      "top": 100,
+      "left": 230,
+      "attrs": {
+        "value": "470"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_r",
+      "top": 140,
+      "left": 230,
+      "attrs": {
+        "value": "470"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_g",
+      "top": 40,
+      "left": 330,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_y",
+      "top": 80,
+      "left": 370,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_r",
+      "top": 120,
+      "left": 410,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "t1",
+      "top": -190,
+      "left": -280,
+      "attrs": {
+        "text": "Moisture 15 cm | Moisture 40 cm | Battery"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "t2",
+      "top": 10,
+      "left": -340,
+      "attrs": {
+        "text": "Soil temp 15 / 40 cm (NTC)"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "t3",
+      "top": 160,
+      "left": -280,
+      "attrs": {
+        "text": "Air T/RH (DHT22 stands in for SHT40)"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "pot_m15:SIG",
+      "esp:4",
+      "green",
+      []
+    ],
+    [
+      "pot_m15:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "pot_m15:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pot_m40:SIG",
+      "esp:5",
+      "green",
+      []
+    ],
+    [
+      "pot_m40:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "pot_m40:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pot_bat:SIG",
+      "esp:1",
+      "green",
+      []
+    ],
+    [
+      "pot_bat:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "pot_bat:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "ntc15:OUT",
+      "esp:2",
+      "orange",
+      []
+    ],
+    [
+      "ntc15:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "ntc15:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "ntc40:OUT",
+      "esp:6",
+      "orange",
+      []
+    ],
+    [
+      "ntc40:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "ntc40:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "dht:SDA",
+      "esp:8",
+      "blue",
+      []
+    ],
+    [
+      "dht:VCC",
+      "esp:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "dht:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "btn_rain:1.l",
+      "esp:17",
+      "blue",
+      []
+    ],
+    [
+      "btn_rain:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "btn_user:1.l",
+      "esp:0",
+      "gray",
+      []
+    ],
+    [
+      "btn_user:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:41",
+      "r_g:1",
+      "green",
+      []
+    ],
+    [
+      "r_g:2",
+      "led_g:A",
+      "green",
+      []
+    ],
+    [
+      "led_g:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "esp:42",
+      "r_y:1",
+      "green",
+      []
+    ],
+    [
+      "r_y:2",
+      "led_y:A",
+      "green",
+      []
+    ],
+    [
+      "led_y:C",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "esp:21",
+      "r_r:1",
+      "green",
+      []
+    ],
+    [
+      "r_r:2",
+      "led_r:A",
+      "green",
+      []
+    ],
+    [
+      "led_r:C",
+      "esp:GND.2",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

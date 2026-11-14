@@ -1,0 +1,3754 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-14T14:09:13-0300",
+    "kicad_version": "8.0.8",
+    "schematic_parity": [],
+    "source": "gaiapus-node.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Largura anular (regra 'JLC annular ring' largura anular mín 0,1300 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Ilha PTH [<no net>] de J5",
+                    "pos": {
+                        "x": 124.7,
+                        "y": 143.19
+                    },
+                    "uuid": "8d39cb9a-8a26-47b5-bd2f-1b442fc6f965"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Largura anular (regra 'JLC annular ring' largura anular mín 0,1300 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Ilha PTH [<no net>] de J5",
+                    "pos": {
+                        "x": 130.5,
+                        "y": 143.19
+                    },
+                    "uuid": "ed09a0a0-3559-402f-a598-656cd9b8edc5"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Largura anular (regra 'JLC annular ring' largura anular mín 0,1300 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Ilha PTH [<no net>] de BT1",
+                    "pos": {
+                        "x": 180.84,
+                        "y": 110.0
+                    },
+                    "uuid": "568db8e9-69fa-4947-9c0c-4e35f523e10f"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Violação do isolamento (regra 'RF 50 ohm (estimate)' isolamento 0,3000 mm; atual 0,2250 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/LoRa/RF_MOD] no F.Cu, comprimento 1,2000 mm",
+                    "pos": {
+                        "x": 166.7,
+                        "y": 109.9
+                    },
+                    "uuid": "89f86d42-3a35-55ff-8dec-8c19c38f3f12"
+                },
+                {
+                    "description": "Ilha 7 [GND] de U5 no F.Cu",
+                    "pos": {
+                        "x": 167.27,
+                        "y": 111.05
+                    },
+                    "uuid": "42d509ac-106f-4c72-95b3-67b97880a9f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'RF 50 ohm (estimate)' isolamento 0,3000 mm; atual 0,2351 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/LoRa/RF_MOD] no F.Cu, comprimento 0,7071 mm",
+                    "pos": {
+                        "x": 167.9,
+                        "y": 109.9
+                    },
+                    "uuid": "6b388c19-4caf-5d5c-91b2-dc03d3fa2c92"
+                },
+                {
+                    "description": "Ilha 7 [GND] de U5 no F.Cu",
+                    "pos": {
+                        "x": 167.27,
+                        "y": 111.05
+                    },
+                    "uuid": "42d509ac-106f-4c72-95b3-67b97880a9f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'RF 50 ohm (estimate)' isolamento 0,3000 mm; atual 0,2636 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/LoRa/RF_MOD] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 167.9,
+                        "y": 109.9
+                    },
+                    "uuid": "803805f1-9d4e-597c-ac91-8a441981e72f"
+                },
+                {
+                    "description": "Ilha 7 [GND] de U5 no F.Cu",
+                    "pos": {
+                        "x": 167.27,
+                        "y": 111.05
+                    },
+                    "uuid": "42d509ac-106f-4c72-95b3-67b97880a9f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'JLC clearance' isolamento 0,1500 mm; atual 0,1472 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Interface/USB_CC2] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 141.0
+                    },
+                    "uuid": "d13f782b-593d-5303-a77a-0ec60ea1c2cd"
+                },
+                {
+                    "description": "Ilha B4A9 [VBUS] de J5 no F.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 141.93
+                    },
+                    "uuid": "8ce3ad2a-f21a-481b-ba9e-244582147060"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'JLC clearance' isolamento 0,1500 mm; atual 0,1472 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Interface/USB_CC2] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 129.6,
+                        "y": 141.0
+                    },
+                    "uuid": "51995557-45b9-575a-b9d9-d100ab071053"
+                },
+                {
+                    "description": "Ilha B4A9 [VBUS] de J5 no F.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 141.93
+                    },
+                    "uuid": "8ce3ad2a-f21a-481b-ba9e-244582147060"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes GND e /Power/PROT_CS)",
+            "items": [
+                {
+                    "description": "Ilha 6 [GND] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 127.67
+                    },
+                    "uuid": "db1721ca-6ce5-4ada-8ed4-88049c469ba9"
+                },
+                {
+                    "description": "Ilha 2 [/Power/PROT_CS] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.0
+                    },
+                    "uuid": "d3668597-bc74-48e8-b84f-cad3ddcbbc42"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Violação do isolamento (regra 'JLC clearance' isolamento 0,1500 mm; atual 0,1435 mm)",
+            "items": [
+                {
+                    "description": "Ilha 6 [GND] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 127.67
+                    },
+                    "uuid": "db1721ca-6ce5-4ada-8ed4-88049c469ba9"
+                },
+                {
+                    "description": "Ilha 3 [/Power/PROT_OC] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 127.05
+                    },
+                    "uuid": "c525296d-f968-4ae3-a4e9-ab332454422a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes GND e /Power/PROT_CS)",
+            "items": [
+                {
+                    "description": "Ilha 7 [GND] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 128.32
+                    },
+                    "uuid": "5de8f88e-2bde-4df2-a9b8-6a1cd59ec74b"
+                },
+                {
+                    "description": "Ilha 2 [/Power/PROT_CS] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.0
+                    },
+                    "uuid": "d3668597-bc74-48e8-b84f-cad3ddcbbc42"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes /Power/PROT_D e /Power/PROT_OD)",
+            "items": [
+                {
+                    "description": "Ilha 8 [/Power/PROT_D] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 128.98
+                    },
+                    "uuid": "7a7eab12-df75-4200-b9e7-d2474c10389f"
+                },
+                {
+                    "description": "Ilha 1 [/Power/PROT_OD] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.95
+                    },
+                    "uuid": "f26329f6-ba83-4d1b-ad86-78153119bcff"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Violação do isolamento (regra 'JLC clearance' isolamento 0,1500 mm; atual 0,1002 mm)",
+            "items": [
+                {
+                    "description": "Ilha A1B12 [GND] de J5 no F.Cu",
+                    "pos": {
+                        "x": 124.4,
+                        "y": 141.93
+                    },
+                    "uuid": "1ed47f97-2935-4bd7-9ad8-135d64da68f4"
+                },
+                {
+                    "description": "Ilha A4B9 [VBUS] de J5 no F.Cu",
+                    "pos": {
+                        "x": 125.2,
+                        "y": 141.93
+                    },
+                    "uuid": "19fbc24a-9591-493d-a886-bd280304c0b1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'JLC clearance' isolamento 0,1500 mm; atual 0,1000 mm)",
+            "items": [
+                {
+                    "description": "Ilha B1A12 [GND] de J5 no F.Cu",
+                    "pos": {
+                        "x": 130.8,
+                        "y": 141.93
+                    },
+                    "uuid": "74b64316-16ed-41c2-9b09-0f818c37430d"
+                },
+                {
+                    "description": "Ilha B4A9 [VBUS] de J5 no F.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 141.93
+                    },
+                    "uuid": "8ce3ad2a-f21a-481b-ba9e-244582147060"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Violação do isolamento (regra 'RF 50 ohm (estimate)' isolamento 0,3000 mm; atual 0,0450 mm)",
+            "items": [
+                {
+                    "description": "Ilha 1 [/LoRa/RF_MOD] de C12 no F.Cu",
+                    "pos": {
+                        "x": 166.3,
+                        "y": 110.075
+                    },
+                    "uuid": "8a6c7cdc-0183-4482-ab34-c018c2d3837e"
+                },
+                {
+                    "description": "Ilha 7 [GND] de U5 no F.Cu",
+                    "pos": {
+                        "x": 167.27,
+                        "y": 111.05
+                    },
+                    "uuid": "42d509ac-106f-4c72-95b3-67b97880a9f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Itens encurtando duas redes (redes /LoRa/RF_MOD e unconnected-(U5-NC-Pad8))",
+            "items": [
+                {
+                    "description": "Ilha 1 [/LoRa/RF_MOD] de C12 no F.Cu",
+                    "pos": {
+                        "x": 166.3,
+                        "y": 110.075
+                    },
+                    "uuid": "8a6c7cdc-0183-4482-ab34-c018c2d3837e"
+                },
+                {
+                    "description": "Ilha 8 [unconnected-(U5-NC-Pad8)] de U5 no F.Cu",
+                    "pos": {
+                        "x": 166.0,
+                        "y": 111.05
+                    },
+                    "uuid": "8d10f16c-5a5b-4f31-8d4e-a2133c76a8a6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,1000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 180.0,
+                        "y": 128.2
+                    },
+                    "uuid": "190b7abd-30ba-5d66-b041-68dd6399ae03"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 180.0,
+                        "y": 127.8
+                    },
+                    "uuid": "fec27600-82b1-5f68-a677-46b7b2c34969"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,4616 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.2,
+                        "y": 108.5
+                    },
+                    "uuid": "b1226c12-b9c2-5773-9f6d-d8ac9e20c64f"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 108.2
+                    },
+                    "uuid": "a5b75512-7e64-55c6-88d5-f7f305d04022"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 108.2
+                    },
+                    "uuid": "f5f50a50-ed7b-5c4e-8646-658fce0b4e89"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 108.2
+                    },
+                    "uuid": "a5b75512-7e64-55c6-88d5-f7f305d04022"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 108.2
+                    },
+                    "uuid": "46107521-181e-5c97-b9eb-86dfae890a3d"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.4,
+                        "y": 108.2
+                    },
+                    "uuid": "295d64ea-5e30-5a5f-8b9f-57f75aaedc98"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 108.2
+                    },
+                    "uuid": "0502a623-5fa2-5d12-a861-2237a3efd7c9"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.4,
+                        "y": 108.2
+                    },
+                    "uuid": "295d64ea-5e30-5a5f-8b9f-57f75aaedc98"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.5,
+                        "y": 108.2
+                    },
+                    "uuid": "ad56f81b-52ad-5bbe-8d8d-7f2fe6e1d6d5"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.7,
+                        "y": 108.2
+                    },
+                    "uuid": "369b8d6d-b39e-5b43-aefb-3bb182620359"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 111.8,
+                        "y": 107.5
+                    },
+                    "uuid": "bf4a7891-7121-5f88-8803-7d22eda030cd"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 107.5
+                    },
+                    "uuid": "9c2c52f9-5b5d-5c28-a07a-b1cfa2a3833f"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.9,
+                        "y": 106.2
+                    },
+                    "uuid": "486e8248-2b79-5f2a-8d74-b9ef37577b68"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.9,
+                        "y": 106.4
+                    },
+                    "uuid": "cda10fe2-4156-52d5-be45-f0ea8b7bd431"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.9,
+                        "y": 106.2
+                    },
+                    "uuid": "486e8248-2b79-5f2a-8d74-b9ef37577b68"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.7,
+                        "y": 106.3
+                    },
+                    "uuid": "5eeefaa6-3b56-5b6d-9ff2-cbb328caf777"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.9,
+                        "y": 106.4
+                    },
+                    "uuid": "cda10fe2-4156-52d5-be45-f0ea8b7bd431"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.7,
+                        "y": 106.3
+                    },
+                    "uuid": "5eeefaa6-3b56-5b6d-9ff2-cbb328caf777"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,4000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.7,
+                        "y": 113.7
+                    },
+                    "uuid": "34d03a9b-464f-50d2-ae4a-c32732907167"
+                },
+                {
+                    "description": "Via [GND] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 113.7
+                    },
+                    "uuid": "ee8740d5-7e02-5a51-bbef-56fc4217cbea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Furo feito muito próximo de outro furo (regra 'JLC hole to hole' mín 0,4995 mm; atual 0,2099 mm)",
+            "items": [
+                {
+                    "description": "Via [+3V3] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 181.8,
+                        "y": 141.6
+                    },
+                    "uuid": "6a49a94e-a79b-5511-8949-d02c1729d62c"
+                },
+                {
+                    "description": "Via [+3V3] no F.Cu - B.Cu",
+                    "pos": {
+                        "x": 181.3,
+                        "y": 141.5
+                    },
+                    "uuid": "f3165bbe-3840-5b4f-8d0b-e57a3252d947"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_near_hole"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,2000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Power/SW_L1] no F.Cu, comprimento 1,7000 mm",
+                    "pos": {
+                        "x": 145.3,
+                        "y": 106.0
+                    },
+                    "uuid": "d52f9748-c64d-5607-a8b0-4196e47d7fe3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,2000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Power/SW_L1] no F.Cu, comprimento 0,5657 mm",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 106.0
+                    },
+                    "uuid": "44ec64af-1139-55d0-9c30-d9f5c8804676"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,2000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Power/SW_L2] no F.Cu, comprimento 1,6000 mm",
+                    "pos": {
+                        "x": 145.3,
+                        "y": 107.0
+                    },
+                    "uuid": "23ee689f-9869-5562-beba-8350dfbcf9d5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,2000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [/Power/SW_L2] no F.Cu, comprimento 0,5657 mm",
+                    "pos": {
+                        "x": 146.9,
+                        "y": 107.0
+                    },
+                    "uuid": "f55e3320-6e14-5d1f-bf73-d566aed6f284"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,5657 mm",
+                    "pos": {
+                        "x": 102.6,
+                        "y": 110.1
+                    },
+                    "uuid": "ef8255aa-b515-53c9-871a-ec7294d99210"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 3,8000 mm",
+                    "pos": {
+                        "x": 102.2,
+                        "y": 110.5
+                    },
+                    "uuid": "c8ee7b64-5466-5c1d-8e15-cf503cebc548"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 9,7581 mm",
+                    "pos": {
+                        "x": 106.1,
+                        "y": 114.3
+                    },
+                    "uuid": "d38d85bc-4295-56ce-942d-104ec2d24f1c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 107.4
+                    },
+                    "uuid": "b728553c-5206-520f-b9eb-e2b0ee547a12"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.1,
+                        "y": 107.5
+                    },
+                    "uuid": "01685d7b-7fa6-5f0c-b24b-db8f5cdba8d4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 107.4
+                    },
+                    "uuid": "20851ec0-fbc4-5808-8d58-2f8eb3f47c35"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 107.5
+                    },
+                    "uuid": "42a1e3a3-69ff-5b67-ac03-bfd0b8d3bc29"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.4,
+                        "y": 107.4
+                    },
+                    "uuid": "a19b35ef-8938-586c-a60a-f7112271de30"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.5,
+                        "y": 107.5
+                    },
+                    "uuid": "2e5de71a-5581-5f1a-ab6c-8d7044a42a11"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.6,
+                        "y": 107.4
+                    },
+                    "uuid": "fcd87db3-b0d5-53e5-bb19-e40d1899ab0f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.7,
+                        "y": 107.5
+                    },
+                    "uuid": "0a2ed7f0-7ef0-53a4-a432-1f110c6ba110"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.8,
+                        "y": 107.4
+                    },
+                    "uuid": "05b64d35-575f-5674-b5a8-930e703ebb44"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 113.9,
+                        "y": 107.5
+                    },
+                    "uuid": "2db9120e-7ef8-5624-a115-8cffc2eef3db"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 107.4
+                    },
+                    "uuid": "bceeea45-f1f1-5519-9af4-a1a12113574f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.1,
+                        "y": 107.5
+                    },
+                    "uuid": "0b4fdd01-a880-5b2a-8012-6f0c828a781d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.2,
+                        "y": 107.4
+                    },
+                    "uuid": "167cd1a6-14bd-5f2c-9175-a796aacf7a16"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.3,
+                        "y": 107.5
+                    },
+                    "uuid": "58c2de7b-f98d-5fa1-ae19-4151a5558368"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.4,
+                        "y": 107.4
+                    },
+                    "uuid": "de209fb5-5089-5885-a6b7-c4a575e86ff2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 107.5
+                    },
+                    "uuid": "bc80e05e-6c3b-5668-b65d-4f11fda84d4a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.6,
+                        "y": 107.4
+                    },
+                    "uuid": "9bbff2be-e70d-5f7d-ab1d-b27c240e43ad"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.7,
+                        "y": 107.5
+                    },
+                    "uuid": "e239f3b7-48b1-532a-8129-3dcf84813c10"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.8,
+                        "y": 107.4
+                    },
+                    "uuid": "a965f391-39cd-52a4-9e38-1dd5cf9e3087"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 114.9,
+                        "y": 107.5
+                    },
+                    "uuid": "a3e3da80-635e-5065-a743-e08b0a9c53a1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 107.4
+                    },
+                    "uuid": "2a64e813-69cd-538b-a1ab-f049eab0daa2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 107.5
+                    },
+                    "uuid": "24bf6f8e-1848-5bbb-939c-b83c2ec7f24f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.2,
+                        "y": 107.4
+                    },
+                    "uuid": "163c419c-6d9a-59be-acf0-1600b3b2eee7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.3,
+                        "y": 107.5
+                    },
+                    "uuid": "a7809c19-ff75-5486-a1a3-5f8c4b177caf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.4,
+                        "y": 107.4
+                    },
+                    "uuid": "9c0b6738-4672-55a3-9ad9-720cdb4598a4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.5,
+                        "y": 107.5
+                    },
+                    "uuid": "0c9bda38-8c3a-5135-9e89-15397f3437b0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.6,
+                        "y": 107.4
+                    },
+                    "uuid": "a70a8221-e8fb-5492-b04a-76debfbc9905"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.7,
+                        "y": 107.5
+                    },
+                    "uuid": "fb4f7933-e363-54b8-8ab1-dfd41fe72031"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 107.4
+                    },
+                    "uuid": "d38e66e3-5e77-5bac-a3ed-f800be9641ea"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 115.9,
+                        "y": 107.5
+                    },
+                    "uuid": "c8abbf3c-0681-544e-ba76-832849148c7e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 107.4
+                    },
+                    "uuid": "4ff4de34-5f73-5f4b-8f93-cbf0d0fc76dd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.1,
+                        "y": 107.5
+                    },
+                    "uuid": "fe3555c1-81f5-5a44-a840-f21e7899333a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 107.4
+                    },
+                    "uuid": "1cd9663c-9ec9-5018-a4ba-e6448c001041"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.3,
+                        "y": 107.5
+                    },
+                    "uuid": "6b640e39-57d1-583d-85cd-622419685e16"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.4,
+                        "y": 107.4
+                    },
+                    "uuid": "195edb25-f248-5f86-a55a-aeaa09be06a5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 107.5
+                    },
+                    "uuid": "f5c6d080-6b94-583c-8dba-d10493c64a87"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.6,
+                        "y": 107.4
+                    },
+                    "uuid": "1e0f5992-9ef7-5f6a-bd97-8790edaa2d79"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.7,
+                        "y": 107.5
+                    },
+                    "uuid": "2312c70d-22a0-5a8f-bb1a-3fbe7e677016"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.8,
+                        "y": 107.4
+                    },
+                    "uuid": "a8c42922-9ee7-5085-9e67-4a0a7e3909a0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 116.9,
+                        "y": 107.5
+                    },
+                    "uuid": "7ddb5254-af78-5bd3-a564-6dd4ec6dbfc3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 107.4
+                    },
+                    "uuid": "692f1e23-1013-58d1-bce0-95848d487751"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.1,
+                        "y": 107.5
+                    },
+                    "uuid": "08786bd0-99a5-5d4b-8e45-26d2ec07fd22"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.2,
+                        "y": 107.4
+                    },
+                    "uuid": "361619d2-2b8c-55b3-ba1e-e9fd7714b8ac"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.3,
+                        "y": 107.5
+                    },
+                    "uuid": "1a1869d9-3db4-52fa-a804-4025d698268a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.4,
+                        "y": 107.4
+                    },
+                    "uuid": "5928436a-2095-516f-a044-6e24b5e6437e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 107.5
+                    },
+                    "uuid": "61f9f3ed-342a-5738-9c26-7f306cb82b56"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.6,
+                        "y": 107.4
+                    },
+                    "uuid": "76dcc9e4-7939-58e4-860d-ccaca27b672c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.7,
+                        "y": 107.5
+                    },
+                    "uuid": "b6f700e0-3604-5c19-9d1a-158118f42b54"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.8,
+                        "y": 107.4
+                    },
+                    "uuid": "833b80f2-7e4d-528b-8e2a-c911a2f34aba"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 117.9,
+                        "y": 107.5
+                    },
+                    "uuid": "31c00711-7e38-5a79-9e20-34e06ebd43ad"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 107.4
+                    },
+                    "uuid": "dcb16960-694d-51b2-a443-2f4e921be046"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.1,
+                        "y": 107.5
+                    },
+                    "uuid": "73817258-0c4b-5603-9890-8f7be91924cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.2,
+                        "y": 107.4
+                    },
+                    "uuid": "a647abce-1280-59e4-be7d-cace6a7fdaa3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.3,
+                        "y": 107.5
+                    },
+                    "uuid": "14616a87-0103-5182-87bf-cdafaa1f82e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.4,
+                        "y": 107.4
+                    },
+                    "uuid": "be7a7bb4-abec-5f40-ae9a-5d2c33d233ff"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 107.5
+                    },
+                    "uuid": "25223b6c-74cc-57dd-9592-de6f00a9dbdb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.6,
+                        "y": 107.4
+                    },
+                    "uuid": "f9fd07f2-1f98-5424-bc5c-298b24cb9965"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.7,
+                        "y": 107.5
+                    },
+                    "uuid": "111c7265-b2e2-5f5d-9715-c4aaad0e4820"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.8,
+                        "y": 107.4
+                    },
+                    "uuid": "22ae8cc6-70a6-52e5-89b6-58fb3fceff67"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 118.9,
+                        "y": 107.5
+                    },
+                    "uuid": "cb09fbab-a18c-5cae-ba69-b0b00effcc07"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 107.4
+                    },
+                    "uuid": "ac7b6e19-ce1f-53c6-9b8e-90d3030de838"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.1,
+                        "y": 107.5
+                    },
+                    "uuid": "072c247d-6288-53c2-8676-67cbe779f703"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.2,
+                        "y": 107.4
+                    },
+                    "uuid": "7f5a6dfa-a4ac-563a-835f-c521fdba3b84"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.3,
+                        "y": 107.5
+                    },
+                    "uuid": "611fa6e1-6007-5597-98ff-10fefc8a04d8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.4,
+                        "y": 107.4
+                    },
+                    "uuid": "c8481fdb-b2d9-55ec-9543-3a4f51bd72b4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 107.5
+                    },
+                    "uuid": "a040f064-65de-5ff5-bba1-d61605973a95"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.6,
+                        "y": 107.4
+                    },
+                    "uuid": "ed2fe310-903f-5826-91a3-3e6c3a3336b9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.7,
+                        "y": 107.5
+                    },
+                    "uuid": "99c135d9-1325-5b0b-bea1-9e815955fc8a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.8,
+                        "y": 107.4
+                    },
+                    "uuid": "8e997a18-78a5-5cf6-a111-4d66cb0d2b5c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 119.9,
+                        "y": 107.5
+                    },
+                    "uuid": "db6c6292-ad03-5a58-890b-0a5028751713"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 107.4
+                    },
+                    "uuid": "ea620387-508b-5b07-b8c4-479cdb4cae38"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.1,
+                        "y": 107.5
+                    },
+                    "uuid": "f305cb68-c7b7-5d56-a56a-5cc43e1bf5f3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.2,
+                        "y": 107.4
+                    },
+                    "uuid": "d73f7194-b051-5647-adfd-5872119ab1e5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.3,
+                        "y": 107.5
+                    },
+                    "uuid": "386ec4d1-c388-56bd-9309-a46d182b7ba4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.4,
+                        "y": 107.4
+                    },
+                    "uuid": "abea39b5-7659-57b7-87de-9661b8906e51"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 107.5
+                    },
+                    "uuid": "1e458f97-f478-5dd8-a26c-a9c80afe53c4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.6,
+                        "y": 107.4
+                    },
+                    "uuid": "ca13f314-79d7-5b6e-8d74-b0b538227df4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.7,
+                        "y": 107.5
+                    },
+                    "uuid": "a9913d0c-cd40-586d-887b-0fa7cbe37fe9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.8,
+                        "y": 107.4
+                    },
+                    "uuid": "dfffe8d7-428b-5564-a7a9-ec16de8f0069"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 120.9,
+                        "y": 107.5
+                    },
+                    "uuid": "c5952fba-ee57-55f2-9057-27b04be69686"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 107.4
+                    },
+                    "uuid": "fb8e3a8d-ec0f-590a-a0f2-30aa05bc1cfd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.1,
+                        "y": 107.5
+                    },
+                    "uuid": "d724c606-4f47-5fff-841a-04cee91f4ad0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.2,
+                        "y": 107.4
+                    },
+                    "uuid": "35e4e57b-427e-5c11-91e5-622a52c7854c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.3,
+                        "y": 107.5
+                    },
+                    "uuid": "5a5d696b-4b8a-52b5-a09c-ba4c4d58dbb5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.4,
+                        "y": 107.4
+                    },
+                    "uuid": "cd963879-19f4-591c-a3a1-d6b818b7be12"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 107.5
+                    },
+                    "uuid": "c429fd75-6d54-5f54-83b7-36407ed85c6a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.6,
+                        "y": 107.4
+                    },
+                    "uuid": "fd9d2978-a0e7-56c3-b38d-e123c36aac8f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.7,
+                        "y": 107.5
+                    },
+                    "uuid": "828dcad9-3a4f-5938-976a-711fb0882aa6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 107.4
+                    },
+                    "uuid": "2f6144af-b0e5-5746-8a48-59ae9e1e93c7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 121.9,
+                        "y": 107.5
+                    },
+                    "uuid": "8c9d4bda-42dc-5965-a3aa-5e6e631ad1a6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 107.4
+                    },
+                    "uuid": "4d57e315-380c-5f37-bbf2-40a034175b5f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.1,
+                        "y": 107.5
+                    },
+                    "uuid": "a459d827-36ca-553f-9a65-deb0d88a515c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.2,
+                        "y": 107.4
+                    },
+                    "uuid": "13873f7f-d2e6-552c-9561-d08f4a5acd7e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.3,
+                        "y": 107.5
+                    },
+                    "uuid": "f05224c3-b21b-5a4a-9eae-05cc32749e3c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.4,
+                        "y": 107.4
+                    },
+                    "uuid": "983c3f19-d45e-5484-991b-b0d9caf580d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 107.5
+                    },
+                    "uuid": "2090f15c-45e9-525d-8893-be1b1c74861c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.6,
+                        "y": 107.4
+                    },
+                    "uuid": "03346fd3-f09f-5b3b-8fe3-f59928920607"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 107.5
+                    },
+                    "uuid": "90df9cb3-e173-5941-8d4e-decfe02f5780"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.8,
+                        "y": 107.4
+                    },
+                    "uuid": "ef7daa28-e0cf-5df7-bd29-8262c7a9fad9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 122.9,
+                        "y": 107.5
+                    },
+                    "uuid": "004e8199-1216-545f-a562-38d038a57b81"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 107.4
+                    },
+                    "uuid": "ed6cde38-a9bd-5cd3-9d54-5b7ee9c09efd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.1,
+                        "y": 107.5
+                    },
+                    "uuid": "88ace328-a38b-5b26-82dd-abcc60185c3d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.2,
+                        "y": 107.4
+                    },
+                    "uuid": "401d8a68-0e4d-5eaa-b73c-ec1d6e1acbf9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.3,
+                        "y": 107.5
+                    },
+                    "uuid": "e439e432-b37f-5727-b5a9-7b6fc2e6b36c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.4,
+                        "y": 107.4
+                    },
+                    "uuid": "9f07b519-b060-5369-9a6f-475abf265c18"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 107.5
+                    },
+                    "uuid": "ed66ba08-2b30-5d8a-9a22-83ae85c97c86"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.6,
+                        "y": 107.4
+                    },
+                    "uuid": "077a00ba-39ef-5e7d-8754-138d1a589e4c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.7,
+                        "y": 107.5
+                    },
+                    "uuid": "b75aee66-df1a-5868-85ad-acb87c8b9b38"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.8,
+                        "y": 107.4
+                    },
+                    "uuid": "c4fe146e-3da2-5728-94ff-b69f40c7ba0a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 123.9,
+                        "y": 107.5
+                    },
+                    "uuid": "15ef2213-e5b1-5b39-b9bf-b3526dde7a80"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 107.4
+                    },
+                    "uuid": "fd58f551-d878-5c91-a117-0c28173e3cc3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 124.1,
+                        "y": 107.5
+                    },
+                    "uuid": "9805b557-a8ea-516b-a100-0f1d5fbdad04"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 124.2,
+                        "y": 107.4
+                    },
+                    "uuid": "f92e64d5-b7d4-53c5-ab61-a7052a021573"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 124.3,
+                        "y": 107.5
+                    },
+                    "uuid": "c2ef1546-7bb1-5196-97e1-ce3d372d3cad"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 124.4,
+                        "y": 107.4
+                    },
+                    "uuid": "f40aed2b-c335-5a40-bd69-7a4d5e81df4a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no B.Cu, comprimento 2,8284 mm",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 107.5
+                    },
+                    "uuid": "14c67967-5cc3-5d2b-b1b6-bf702855f651"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 16,6000 mm",
+                    "pos": {
+                        "x": 126.5,
+                        "y": 105.5
+                    },
+                    "uuid": "f72e318b-0e7b-5559-939a-47f9bb1663cf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 1,1000 mm",
+                    "pos": {
+                        "x": 143.5,
+                        "y": 105.5
+                    },
+                    "uuid": "b293f30c-1d59-5982-9786-9eb6bff3fad5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 1,5556 mm",
+                    "pos": {
+                        "x": 145.2,
+                        "y": 105.5
+                    },
+                    "uuid": "1a53386b-170a-5440-9d21-278995468d81"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 104.4
+                    },
+                    "uuid": "3e77197b-4308-53f0-9e1e-f6fa30559ccc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 104.3
+                    },
+                    "uuid": "809cb271-4f1f-599b-adc7-294810431398"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 104.2
+                    },
+                    "uuid": "7915a76d-500b-5a17-bb99-3f38e6ab6d9e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 104.1
+                    },
+                    "uuid": "6d4edc94-2b2e-5081-998e-6996882c39b1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 104.0
+                    },
+                    "uuid": "9197c954-b5d3-51bc-8480-774dc5ad34e9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 103.9
+                    },
+                    "uuid": "9696f3f1-e59a-53ae-abb7-99c287f45bf5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 103.8
+                    },
+                    "uuid": "6e262dd2-c5de-5d46-aebb-b708f48f54ee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 103.7
+                    },
+                    "uuid": "38060115-1a5d-5e3f-8551-842b2d283e67"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 103.6
+                    },
+                    "uuid": "ba5c90b4-cdd1-51b6-a69a-acea6b31e098"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 103.5
+                    },
+                    "uuid": "a325ec4e-81dd-527e-bed9-92a5376ac9a4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 146.3,
+                        "y": 103.4
+                    },
+                    "uuid": "79ebe705-226d-55f8-b1fe-fb1dc7eb53ae"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 1,1314 mm",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 105.5
+                    },
+                    "uuid": "b9cc985c-ef9a-55aa-93e8-d7e7c5f7ad1c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 106.3
+                    },
+                    "uuid": "fafce9c5-1e73-562b-9c2a-45f80578a0b2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 106.4
+                    },
+                    "uuid": "5f3b749d-00f7-58f7-8ff6-aa01207a5280"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 106.5
+                    },
+                    "uuid": "1167496a-7c02-5b6c-9f38-43ec3b7ea901"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 106.6
+                    },
+                    "uuid": "5f3c8cf3-dc46-57c9-9dc5-8d7a81dc5f48"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 106.7
+                    },
+                    "uuid": "93649a14-8efd-591b-9c66-6d520e7adc9d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 106.8
+                    },
+                    "uuid": "22e587f5-f8d3-5309-b318-e99229862a6e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 106.9
+                    },
+                    "uuid": "457e1d64-7200-539a-b736-7b4938ebb3e0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 107.0
+                    },
+                    "uuid": "88b6e31f-49d8-5085-80d1-957e80179d5d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 107.1
+                    },
+                    "uuid": "6aa6ff02-6b36-542e-9163-5b77d16e564c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 107.2
+                    },
+                    "uuid": "cce70db0-02b3-57cf-a67c-4a25be78dca1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 107.3
+                    },
+                    "uuid": "dac2f702-378b-5c8a-b8c7-829ff241fda3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 107.4
+                    },
+                    "uuid": "08c91fcf-4d1e-5333-b22c-d7d6182c54e9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,7071 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 107.5
+                    },
+                    "uuid": "19cb68ce-96b6-5d53-94f6-ee289395718f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,7071 mm",
+                    "pos": {
+                        "x": 138.7,
+                        "y": 108.0
+                    },
+                    "uuid": "ecbc309c-d319-5b0a-9626-c8636affc1f0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 108.5
+                    },
+                    "uuid": "4d177313-839d-5a90-9d26-9381f9a2ef25"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 108.6
+                    },
+                    "uuid": "c630706b-fc98-5df7-82ea-d839da2a11af"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 108.7
+                    },
+                    "uuid": "43de239e-aa8f-5e06-aefb-5f318f84745d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 108.8
+                    },
+                    "uuid": "392a7e4e-b7d5-5c28-aa29-cf7f8184566e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 108.9
+                    },
+                    "uuid": "d11c4c1c-c19c-5020-90bf-c28f4c181238"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 109.0
+                    },
+                    "uuid": "38b296f5-f974-5462-bd74-54f12dca7352"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 109.1
+                    },
+                    "uuid": "e198ac28-bbf1-53a3-93b7-b9657c95c370"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 109.2
+                    },
+                    "uuid": "94a2837b-42b0-5cb5-a2da-6f1890388a8c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 109.3
+                    },
+                    "uuid": "24e1d561-4acd-5363-a4a5-e5668a74eb2a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 109.4
+                    },
+                    "uuid": "c5c57269-f833-5632-996f-bd0c0a0fe2f9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 138.2,
+                        "y": 109.5
+                    },
+                    "uuid": "371e59ad-63bf-5015-ae3d-6a1dd4cd09ff"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 109.6
+                    },
+                    "uuid": "a817a346-44f4-5bc5-a5ef-a83c4f5552db"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 25,8801 mm",
+                    "pos": {
+                        "x": 138.3,
+                        "y": 109.7
+                    },
+                    "uuid": "031a090a-1b9a-5771-b2ec-caafa4fd2d2b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 128.0
+                    },
+                    "uuid": "aa51d070-f6e2-5e1f-b788-3f779e224714"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 128.1
+                    },
+                    "uuid": "5cf05282-85f7-55df-a742-1c199dbaf9cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 128.2
+                    },
+                    "uuid": "efa5e65c-ed8e-5040-8573-9dd02ad13495"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 128.3
+                    },
+                    "uuid": "b7598726-4bf9-5910-8444-2624adcb94fb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 128.4
+                    },
+                    "uuid": "c84eea94-d942-5669-9b11-8ae1600e76ef"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 128.5
+                    },
+                    "uuid": "20aac6a7-7060-58a8-b22c-d3b85ad006d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 128.6
+                    },
+                    "uuid": "4e036adf-d49a-5795-9a52-25b6a50043f9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 128.7
+                    },
+                    "uuid": "6d3c6769-62c0-51d5-8efa-1c9408f78a4f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 128.8
+                    },
+                    "uuid": "9756a292-6397-5f53-a7e8-7420721d2877"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 128.9
+                    },
+                    "uuid": "583a64d8-efa9-5e89-8ea8-b1f3ac274ff9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 129.0
+                    },
+                    "uuid": "2f701eda-94b1-5b8a-802a-0cc808d1d0b7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 129.1
+                    },
+                    "uuid": "f4945938-524b-574b-ac81-478a4efcc621"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 129.2
+                    },
+                    "uuid": "e7dc97e8-2009-5fcb-9999-fc72c7eff772"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 129.3
+                    },
+                    "uuid": "49dc604c-647c-57c3-b8a0-b1b5ae474b68"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 129.4
+                    },
+                    "uuid": "46c12d15-4740-55be-b677-32c1fe8692fd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 129.5
+                    },
+                    "uuid": "976c4f75-4b31-5bb7-98c5-71c04604e652"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 129.6
+                    },
+                    "uuid": "d332814a-fb4c-5b25-98f0-d603af454428"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 129.7
+                    },
+                    "uuid": "0c14221c-b1b0-55b0-bde6-367a5cc2f278"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 129.8
+                    },
+                    "uuid": "fff68860-06ff-586e-980d-5a014ef328c7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 129.9
+                    },
+                    "uuid": "00873db4-6d0e-57cc-8022-38ad367eedf0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 130.0
+                    },
+                    "uuid": "7559e9ca-1dca-5429-990b-ef978c765298"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 130.1
+                    },
+                    "uuid": "46b388f5-1b3f-5f95-9f73-b3f8c400587c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.6,
+                        "y": 130.2
+                    },
+                    "uuid": "e51b077e-da43-510e-8452-73b6acd76058"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 156.5,
+                        "y": 130.3
+                    },
+                    "uuid": "884ac962-b9c5-53f6-9230-45f9cb923fa9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 156.9,
+                        "y": 130.4
+                    },
+                    "uuid": "63a91c16-bb24-5b84-83c3-d08e4829ada6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,7071 mm",
+                    "pos": {
+                        "x": 157.0,
+                        "y": 130.4
+                    },
+                    "uuid": "5179ad23-e810-5bef-99f8-663497b6f614"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 2,2000 mm",
+                    "pos": {
+                        "x": 157.5,
+                        "y": 129.9
+                    },
+                    "uuid": "ea226397-9fae-591d-95f9-cdfb6a240c72"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,8485 mm",
+                    "pos": {
+                        "x": 159.7,
+                        "y": 129.9
+                    },
+                    "uuid": "68f6e1aa-76d1-5a21-9255-60f31c3e4647"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 1,9799 mm",
+                    "pos": {
+                        "x": 160.7,
+                        "y": 132.4
+                    },
+                    "uuid": "6aa6c7f5-5811-5dc5-8b67-c6cdbaa1df89"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 133.8
+                    },
+                    "uuid": "f50050b8-d89a-502a-96d8-0f74f15be209"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1414 mm",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 133.9
+                    },
+                    "uuid": "bfda12fe-cad6-5485-9e65-179c60690829"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 134.0
+                    },
+                    "uuid": "6ea0f501-970d-5d2d-b2a6-d7e0043d19b8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,2828 mm",
+                    "pos": {
+                        "x": 162.1,
+                        "y": 134.1
+                    },
+                    "uuid": "cccfbf4d-e9c4-5420-983e-d75ac8c368bc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Largura da trilha (configuração das restrições da placa largura mín 0,4000 mm; atual 0,3000 mm)",
+            "items": [
+                {
+                    "description": "Trilha [VBAT] no F.Cu, comprimento 0,1000 mm",
+                    "pos": {
+                        "x": 162.3,
+                        "y": 134.3
+                    },
+                    "uuid": "06eaa546-8edf-5708-bd64-0f155124649e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "A conexão do alívio térmico na região está incompleta (camada F.Cu; zona quantidade de raio mín 2; atual 1)",
+            "items": [
+                {
+                    "description": "Região [GND] no F.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 100.0
+                    },
+                    "uuid": "e840453b-91b1-5f71-9ccb-467cb69229d1"
+                },
+                {
+                    "description": "Ilha GND [GND] de U4 no F.Cu",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 107.8
+                    },
+                    "uuid": "57f122bb-0a2a-4916-adac-2edd96a55884"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "A conexão do alívio térmico na região está incompleta (camada F.Cu; zona quantidade de raio mín 2; atual 1)",
+            "items": [
+                {
+                    "description": "Região [GND] no F.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 100.0
+                    },
+                    "uuid": "e840453b-91b1-5f71-9ccb-467cb69229d1"
+                },
+                {
+                    "description": "Ilha PTH 4 [GND] de J5",
+                    "pos": {
+                        "x": 123.27,
+                        "y": 142.69
+                    },
+                    "uuid": "e238de6d-856d-4038-a4f6-35a7aa4b0365"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "A abertura da máscara de solda da frente conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha 6 [GND] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 127.67
+                    },
+                    "uuid": "db1721ca-6ce5-4ada-8ed4-88049c469ba9"
+                },
+                {
+                    "description": "Ilha 2 [/Power/PROT_CS] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.0
+                    },
+                    "uuid": "d3668597-bc74-48e8-b84f-cad3ddcbbc42"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda da frente conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha 7 [GND] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 128.32
+                    },
+                    "uuid": "5de8f88e-2bde-4df2-a9b8-6a1cd59ec74b"
+                },
+                {
+                    "description": "Ilha 2 [/Power/PROT_CS] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.0
+                    },
+                    "uuid": "d3668597-bc74-48e8-b84f-cad3ddcbbc42"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda da frente conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha 8 [/Power/PROT_D] de Q1 no F.Cu",
+                    "pos": {
+                        "x": 179.67,
+                        "y": 128.98
+                    },
+                    "uuid": "7a7eab12-df75-4200-b9e7-d2474c10389f"
+                },
+                {
+                    "description": "Ilha 1 [/Power/PROT_OD] de U2 no F.Cu",
+                    "pos": {
+                        "x": 178.95,
+                        "y": 128.95
+                    },
+                    "uuid": "f26329f6-ba83-4d1b-ad86-78153119bcff"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "A abertura da máscara de solda da frente conecta itens com redes diferentes",
+            "items": [
+                {
+                    "description": "Ilha 1 [/LoRa/RF_MOD] de C12 no F.Cu",
+                    "pos": {
+                        "x": 166.3,
+                        "y": 110.075
+                    },
+                    "uuid": "8a6c7cdc-0183-4482-ab34-c018c2d3837e"
+                },
+                {
+                    "description": "Ilha 8 [unconnected-(U5-NC-Pad8)] de U5 no F.Cu",
+                    "pos": {
+                        "x": 166.0,
+                        "y": 111.05
+                    },
+                    "uuid": "8d10f16c-5a5b-4f31-8d4e-a2133c76a8a6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}
