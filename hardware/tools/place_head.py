@@ -16,10 +16,10 @@ PLAN = {   # ref: (x, y, rotation)  - board 100..190 x 100..150 mm, M3 holes at 
     "U3": (144.12, 106.52, 0), "L1": (148.6, 106.5, 270), "C4": (147.6, 102.7, 0), "C5": (148.6, 110.7, 0),
     "R4": (139.9, 106.9, 0), "R5": (139.9, 109.1, 0),
     # LoRa: RF pin 6 points up -> R10 -> J2 straight up; SPI side faces the ESP32
-    "U5": (166.0, 116.0, 180), "R10": (168.54, 108.3, 90), "C12": (166.3, 109.3, 90), "C13": (170.8, 107.4, 90),
+    "U5": (166.0, 116.0, 180), "R10": (168.54, 108.3, 90), "C12": (165.6, 109.2, 180), "C13": (170.8, 107.4, 90),
     "J2": (168.54, 104.3, 0), "C10": (174.2, 118.5, 90), "C11": (176.2, 118.5, 90),
     # battery protection next to BT1's negative pad (right end, bottom side)
-    "U2": (177.6, 128.0, 0), "Q1": (182.6, 128.0, 90), "R3": (177.6, 131.8, 0), "C3": (177.6, 124.6, 0), "R2": (181.4, 124.0, 0),
+    "U2": (175.8, 128.0, 0), "Q1": (182.6, 128.0, 90), "R3": (175.8, 131.8, 0), "C3": (175.8, 124.6, 0), "R2": (181.4, 124.0, 0),
     # bottom edge, left -> right: probe, USB-C, LEDs, solar, rain
     "J3": (114.0, 145.6, 0), "C14": (110.6, 140.4, 0), "C15": (114.0, 140.4, 0),
     "J5": (127.6, 144.4, 0), "U7": (127.6, 134.6, 0), "R14": (120.6, 138.2, 90), "R15": (134.6, 138.2, 90),
@@ -59,5 +59,6 @@ if __name__ == "__main__":
     t = strip_routing(open(src, encoding="utf-8").read())
     for ref, (x, y, r) in PLAN.items():
         t = fpmove.place(t, ref, x, y, rot=r)
+    t = re.sub(r'\(pad ""\s+thru_hole\s+circle', '(pad "" np_thru_hole circle', t)
     open(dst, "w", encoding="utf-8").write(t)
     print(f"placed {len(PLAN)} footprints, routing removed ->", dst)

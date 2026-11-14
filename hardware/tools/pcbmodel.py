@@ -53,7 +53,8 @@ def load(path):
                         for xy in re.findall(r"\['xy', '([-\d.]+)', '([-\d.]+)'\]", str(g)):
                             xs.append(float(xy[0])); ys.append(float(xy[1]))
                 if xs:
-                    w = max(w, 2 * max(abs(min(xs)), abs(max(xs)))); h = max(h, 2 * max(abs(min(ys)), abs(max(ys))))
+                    sw = max([float(x) for x in re.findall(r"\['width', '([-\d.]+)'\]", str(prim))] or [0.0])
+                    w = max(w, 2 * max(abs(min(xs)), abs(max(xs))) + sw); h = max(h, 2 * max(abs(min(ys)), abs(max(ys))) + sw)
             ax, ay = rot(lx, ly, fr)
             # pad angle in the file is absolute in KiCad 8
             if round(pang) % 180 == 90: w, h = h, w

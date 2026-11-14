@@ -169,6 +169,8 @@ class Router:
         for L in LAYERS: V |= B[L]
         V |= s.g.edge_block
         for L in LAYERS: V |= s.keepout[L]
+        for (L, sh, n, kind) in s.copper:          # own-net vias: drill-to-drill >= 0.5 mm
+            if n == net and kind == "via" and L == LAYERS[0]: s.g.paint(V, ("circ", sh[1], None, 0.0), VIA_DRILL + 0.5 + MARGIN)
         # via must also keep clear of the edge by EDGE + radius
         E = np.zeros_like(V)
         for sh in s.g.edge_shapes: s.g.paint(E, sh, EDGE + VIA_D / 2)
@@ -302,6 +304,12 @@ class Router:
             if p.th or len(p.layers) == 2: continue
             B, V = s.blocked(net, w / 2)
             src = s.pad_cells(p)
+            near = [v for v in s.vias if v[2] == net and abs(v[0] - p.x) < 1.6 and abs(v[1] - p.y) < 1.6]
+            if near:                                      # reuse a neighbour's via: short track to it, no new via
+                vx, vy, _ = min(near, key=lambda v: (v[0] - p.x) ** 2 + (v[1] - p.y) ** 2)
+                vi, vj = s.g.ij(vx, vy); l0 = src[0][0]
+                path = s.astar(src, [(l0, vi, vj)], B, V, [(vj, vi)])
+                if path: s.commit(net, path, w); continue
             _, ci, cj = src[0]; R = int(3.0 / G)
             i0, i1 = max(0, ci - R), min(s.g.H, ci + R + 1); j0, j1 = max(0, cj - R), min(s.g.W, cj + R + 1)
             l = src[0][0]

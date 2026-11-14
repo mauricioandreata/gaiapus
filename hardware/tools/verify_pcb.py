@@ -72,7 +72,7 @@ def main():
         if A[2] == B[2]:
             if d <= 1e-6: parent[find(i)] = find(j)
         else:
-            if A[3] == "pad" and B[3] == "pad": continue       # footprint geometry, not ours
+            if A[3] == "pad" and B[3] == "pad" and A[4].split(".")[0] == B[4].split(".")[0]: continue   # same footprint: its own geometry
             if d < CLR - 0.01: viol.append((round(d, 3), A[4], A[2].split('/')[-1], B[4], B[2].split('/')[-1]))
     # pads of the same footprint+number are one copper piece (electrode combs)
     first = {}

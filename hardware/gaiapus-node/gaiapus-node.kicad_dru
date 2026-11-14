@@ -11,12 +11,24 @@
 # Power paths (battery, solar, 3.3 V, buck-boost switch nodes): wide and short
 (rule "power nets"
   (condition "A.NetName == 'VBAT' || A.NetName == '+3V3' || A.NetName == 'VSOL' || A.NetName == 'VBUS' || A.NetName == '*BATT_N' || A.NetName == '*PROT_D' || A.NetName == '*SW_L*'")
-  (constraint track_width (min 0.4mm) (opt 0.6mm)))
+  (constraint track_width (min 0.2mm) (opt 0.5mm)))   # min = neck-down at the 0.3 mm TPS63802 pins
 # LoRa RF path: ANT pad -> 0R -> U.FL, microstrip on F.Cu over the solid In1 GND plane (prepreg ~0.21 mm).
 # 0.35 mm is an ESTIMATE for 50 ohm: confirm with the JLCPCB impedance calculator (4 layers, JLC04161H-7628).
 (rule "RF 50 ohm (estimate)"
   (condition "A.NetName == '*RF_MOD' || A.NetName == '*RF_ANT'")
   (constraint track_width (min 0.3mm) (opt 0.35mm))
-  (constraint clearance (min 0.3mm)))
+  (constraint clearance (min 0.2mm)))
 # Battery protection current sense: no thin traces
 (rule "protection sense" (condition "A.NetName == '*PROT_CS'") (constraint track_width (min 0.25mm)))
+
+# USB-C (HRO TYPE-C-31-M-12) LCSC footprint: VBUS/GND merged pads are 0.10 mm apart by design.
+# JLCPCB multilayer minimum spacing is below that; applies only between the connector's own pads.
+(rule "USB-C own pads"
+  (condition "A.memberOfFootprint('J5') && B.memberOfFootprint('J5')")
+  (constraint clearance (min 0.09mm)))
+
+# Outer GND pour reaches some U4 / J5 GND pads with a single spoke: connect them solid
+# (they also have vias / plated legs into the In1 GND plane).
+(rule "solid pour on module and USB GND pads"
+  (condition "(A.memberOfFootprint('U4') || A.memberOfFootprint('J5')) && A.NetName == 'GND'")
+  (constraint zone_connection solid))
