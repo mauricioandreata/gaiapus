@@ -8,7 +8,7 @@ O Gaiapus ajuda o agricultor a decidir **o que plantar em seguida e quando**, se
 
 | Modelo 3D da estaca (projeto real, gerado das placas e do case) | Conceito visual do produto (imagem ilustrativa gerada por IA) |
 |---|---|
-| ![Cabeça da estaca: case, painel solar, botão, LEDs, antena](mechanical/cad/preview/head.png) | ![Conceito da estaca no campo](renders/design-base-v1.jpg) |
+| ![Cabeça da estaca: case, painel solar, botão, LEDs, antena](mechanical/cad/revG/renders/render-head-gauge-left.png) | ![Conceito da estaca no campo](renders/design-base-v1.jpg) |
 
 ---
 
