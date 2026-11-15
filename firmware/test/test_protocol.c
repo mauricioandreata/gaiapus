@@ -46,6 +46,16 @@ int main(void)
     db[0] = 9; db[1] = 0; gp_decode_downlink(db, 2, &e);
     CHECK(e.led == GP_LED_OFF && e.interval_min == 30);
 
+    /* addressed LoRa downlink frame: node c4000110, yellow, 10 min -> 10 01 00 C4 02 0A */
+    uint8_t fr[GP_DOWNLINK_FRAME_LEN]; gp_downlink_t f = { GP_LED_YELLOW, 10 }, g;
+    CHECK(gp_encode_downlink_frame(0xC4000110u, &f, fr) == 6);
+    hex(fr, sizeof fr, h);
+    printf("example downlink frame: %s\n", h);
+    CHECK(strcmp(h, "10 01 00 C4 02 0A") == 0);
+    CHECK(gp_decode_downlink_frame(fr, 6, 0xC4000110u, &g) == 0 && g.led == GP_LED_YELLOW && g.interval_min == 10);
+    CHECK(gp_decode_downlink_frame(fr, 6, 0x00000017u, &g) == -3);
+    CHECK(gp_decode_downlink_frame(fr, 5, 0xC4000110u, &g) == -1);
+
     printf(fails ? "RESULT: FAIL (%d)\n" : "RESULT: OK\n", fails);
     return fails != 0;
 }

@@ -1,92 +1,853 @@
 (kicad_sch
- (version 20231120)
- (generator "gaiapus_gen")
- (generator_version "1.0")
- (uuid "03fc1a47-0af2-5cc0-ab88-f85d6738f3c8")
- (paper "A3")
- (title_block (title "Gaiapus Node - Estaca de solo") (date "2026-11-14") (rev "A") (company "Team Gaiapus · NASA Space Apps 2026") (comment 1 "Field Shift: Adapting Farms with NASA Data"))
- (lib_symbols)
- (text "Solar 5 V 0.3 W (68x37 mm) -> BZT52C6V2 clamp" (exclude_from_sim no) (at 38.56 117.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "e5018184-f42c-5cf1-8bb8-dbea44cd140d"))
- (text "CN3058E LiFePO4 charger, 51 mA" (exclude_from_sim no) (at 38.56 122.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "8c9a4332-59ae-5f5d-991f-7d4fe2278edf"))
- (text "18650 LiFePO4 + HY2112-BB / FS8205A protection" (exclude_from_sim no) (at 38.56 128.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "b2c05ccb-b47d-5ca6-8713-c86335561de1"))
- (text "TPS63802 buck-boost -> +3V3 (11 uA Iq)" (exclude_from_sim no) (at 38.56 133.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "133e7357-8314-5a1a-8422-0612c4b9c74d"))
- (text "VBAT sense: 2 x 2.2 Mohm divider" (exclude_from_sim no) (at 38.56 139.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "6bd1eb15-e6d4-5efa-8a99-575eb2d9fe77"))
- (text "double-click to open" (exclude_from_sim no) (at 38.56 164.64 0) (effects (font (size 1.2 1.2)) (justify left bottom)) (uuid "f94c9060-49e3-57b5-ba3e-576750383685"))
- (text "ESP32-S3-MINI-1-N8" (exclude_from_sim no) (at 168.1 117.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "68541397-dbf2-5b71-a0f2-d3dac3746b06"))
- (text "Wi-Fi (bench/config), deep sleep ~25 uA" (exclude_from_sim no) (at 168.1 122.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "3e76749a-c12c-5815-ae78-dadde8fd1f5b"))
- (text "Reset RC, USER/BOOT button (IO0)" (exclude_from_sim no) (at 168.1 128.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "20b9d83c-b038-58cf-a180-dd1eac3b70e4"))
- (text "UART test pads" (exclude_from_sim no) (at 168.1 133.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "b8869440-7340-5a01-b045-2b85a2c86e60"))
- (text "double-click to open" (exclude_from_sim no) (at 168.1 164.64 0) (effects (font (size 1.2 1.2)) (justify left bottom)) (uuid "f6c958d1-e435-5af4-ab4f-a34bea47a599"))
- (text "EBYTE E22-900MM22S (Semtech SX1262)" (exclude_from_sim no) (at 292.56 117.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "bf9def9f-9b1f-5e9a-9d12-c243fa1262d5"))
- (text "915 MHz (AU915), up to 22 dBm" (exclude_from_sim no) (at 292.56 122.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "d0875659-0014-5e57-a1cc-1a9786d7e88d"))
- (text "ANT pad -> 0 ohm + pi-match (DNP) -> U.FL" (exclude_from_sim no) (at 292.56 128.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "3e6a9eb8-a755-5eb8-a207-9454ea05f569"))
- (text "pigtail to SMA bulkhead on the enclosure" (exclude_from_sim no) (at 292.56 133.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "fb026dcb-73a5-5988-8649-6002ac675fc6"))
- (text "double-click to open" (exclude_from_sim no) (at 292.56 164.64 0) (effects (font (size 1.2 1.2)) (justify left bottom)) (uuid "e76fa100-89af-5f4d-ba38-aae469627281"))
- (text "Probe connector JST-SH 10P -> probe board" (exclude_from_sim no) (at 168.1 213.74 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "3b53776e-1894-5007-960b-b20e249d5ff3"))
- (text "  (separate project hardware/gaiapus-probe)" (exclude_from_sim no) (at 168.1 219.24 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "a019fffd-adb0-5936-b553-ac0b734ffcf2"))
- (text "Air T / RH: Sensirion SHT40 (I2C 0x44)" (exclude_from_sim no) (at 168.1 224.74 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "2b2cf663-6832-598d-97e5-a94901efcac5"))
- (text "Rain gauge: reed switch pulse (JST-SH)" (exclude_from_sim no) (at 168.1 230.24 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "98068014-176e-5616-a28d-18e05f2bc82c"))
- (text "double-click to open" (exclude_from_sim no) (at 168.1 258.62 0) (effects (font (size 1.2 1.2)) (justify left bottom)) (uuid "f49fd968-18fc-5142-81eb-f760b8a60ef9"))
- (text "USB-C (program / charge) + USBLC6-2SC6 ESD" (exclude_from_sim no) (at 168.1 53.72 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "03443c26-8608-59aa-a25c-d7beec665b41"))
- (text "Status LEDs: green / yellow / red (light guide)" (exclude_from_sim no) (at 168.1 59.22 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "ba5a7306-0df1-5f75-a6b1-eaeaab4e8c84"))
- (text "double-click to open" (exclude_from_sim no) (at 168.1 80.82 0) (effects (font (size 1.2 1.2)) (justify left bottom)) (uuid "021e03f3-c261-5703-988f-9a9a99fd1431"))
- (polyline (pts (xy 129.54 125.22) (xy 165.1 125.22)) (stroke (width 0.35) (type solid)) (uuid "8ceadfc2-c9bb-5c51-bdf5-a2d010dd15f9"))
- (polyline (pts (xy 162.6 126.42) (xy 165.1 125.22) (xy 162.6 124.02)) (stroke (width 0.35) (type solid)) (uuid "db122faa-3ce5-57c0-9d1b-fc4946689df9"))
- (text "+3V3 to all blocks" (exclude_from_sim no) (at 131.54 123.72 0) (effects (font (size 1.5 1.5) bold) (justify left bottom)) (uuid "eea26536-bdb6-5fe1-ae26-d13073aaf208"))
- (polyline (pts (xy 165.1 143.22) (xy 129.54 143.22)) (stroke (width 0.35) (type solid)) (uuid "920f7e9c-dbee-533a-8849-b7911c62bad1"))
- (polyline (pts (xy 132.04 142.02) (xy 129.54 143.22) (xy 132.04 144.42)) (stroke (width 0.35) (type solid)) (uuid "cba0937f-3901-5e78-bc91-f315e9aa5b26"))
- (text "VBAT_ADC, CHG status" (exclude_from_sim no) (at 131.54 141.72 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "9ffae5f0-d292-5fda-9bbe-8d3ca139f6cb"))
- (polyline (pts (xy 248.92 131.22) (xy 289.56 131.22)) (stroke (width 0.35) (type solid)) (uuid "bb414737-fa06-5563-ae33-1f07437d7ba8"))
- (polyline (pts (xy 287.06 132.42) (xy 289.56 131.22) (xy 287.06 130.02)) (stroke (width 0.35) (type solid)) (uuid "e39baed3-14b0-57a8-a772-6f80e8a2f45c"))
- (polyline (pts (xy 251.42 130.02) (xy 248.92 131.22) (xy 251.42 132.42)) (stroke (width 0.35) (type solid)) (uuid "f1f7e39b-e390-5154-b9e9-dd4a04a4ebc7"))
- (text "SPI + NSS, BUSY, DIO1 (IRQ)," (exclude_from_sim no) (at 250.92 129.72 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "c72ed33b-6589-5ef4-86a6-c4ddaeebffee"))
- (text "NRST, TXEN, RXEN" (exclude_from_sim no) (at 250.92 134.72 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "708f0a18-7db4-58d0-82ff-2f27fd0e92a7"))
- (polyline (pts (xy 207.01 167.64) (xy 207.01 205.74)) (stroke (width 0.35) (type solid)) (uuid "03119b89-46d6-527d-85d3-1b186c3b5f4a"))
- (polyline (pts (xy 205.81 203.24) (xy 207.01 205.74) (xy 208.21 203.24)) (stroke (width 0.35) (type solid)) (uuid "ecf5f0b5-630a-5a3e-9d73-919634e91110"))
- (polyline (pts (xy 208.21 170.14) (xy 207.01 167.64) (xy 205.81 170.14)) (stroke (width 0.35) (type solid)) (uuid "506af6e4-93aa-524f-a7b9-dedeeac7a4da"))
- (text "OSC15/40 frequency (PCNT)" (exclude_from_sim no) (at 209.01 174.64 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "67620602-600f-5e00-bf81-d732f9a220c1"))
- (text "NTC15/40 ADC, I2C (SHT40)" (exclude_from_sim no) (at 209.01 179.14 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "db7d21b7-0b17-50df-b602-f9e5a0ea7e0f"))
- (text "RAIN pulse (wake)" (exclude_from_sim no) (at 209.01 183.64 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "f13e01b3-cb26-524e-b2e3-b32e1a89743a"))
- (text "PWR_OSC / PWR_NTC (power gating)" (exclude_from_sim no) (at 209.01 188.14 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "80199beb-9b87-581a-bac5-19acbba4efff"))
- (polyline (pts (xy 207.01 83.82) (xy 207.01 109.22)) (stroke (width 0.35) (type solid)) (uuid "2c647294-28d2-549e-af6f-435cc461c14c"))
- (polyline (pts (xy 205.81 106.72) (xy 207.01 109.22) (xy 208.21 106.72)) (stroke (width 0.35) (type solid)) (uuid "423206bb-1de6-5088-bd07-1733e350f733"))
- (polyline (pts (xy 208.21 86.32) (xy 207.01 83.82) (xy 205.81 86.32)) (stroke (width 0.35) (type solid)) (uuid "d21b219a-47a9-5a70-adc5-928e0ea63f95"))
- (text "USB D+/D-, LED G/Y/R" (exclude_from_sim no) (at 209.01 91.82 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "b8e4339a-a194-5f8f-8a0b-d28d9897fdad"))
- (polyline (pts (xy 165.1 64.77) (xy 82.55 64.77) (xy 82.55 109.22)) (stroke (width 0.35) (type solid)) (uuid "3b2b20d6-3fbf-518d-a967-06feab9d773d"))
- (polyline (pts (xy 82.55 74.77) (xy 82.55 109.22)) (stroke (width 0.35) (type solid)) (uuid "71820ab0-83db-5aa2-94c6-1856553a383b"))
- (polyline (pts (xy 81.35 106.72) (xy 82.55 109.22) (xy 83.75 106.72)) (stroke (width 0.35) (type solid)) (uuid "621a0019-90c4-593d-98a0-4f686d492196"))
- (text "VBUS (USB 5 V) -> solar input via Schottky" (exclude_from_sim no) (at 84.55 63.27 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "9e652b39-8c48-51e0-b49a-a7860182ad23"))
- (text "Off-board: solar panel (JST-SH), 18650 cell in SMD holder" (exclude_from_sim no) (at 35.56 177.64 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "3c87394a-61fe-54ca-a0cf-1d01235c27af"))
- (text "Off-board: 915 MHz antenna (U.FL -> SMA)" (exclude_from_sim no) (at 289.56 177.64 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "cc4bb664-50c2-5fa7-9682-5a81aa6f43dd"))
- (text "Probe board (22 x ~460 mm strip in 32 mm PVC tube, resin filled):" (exclude_from_sim no) (at 165.1 271.62 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "760eb7fb-0c3b-5a9b-97cc-c4168b691699"))
- (text "interdigitated electrodes + 74LVC1G14 oscillators + NTC at 15 cm and 40 cm" (exclude_from_sim no) (at 165.1 276.62 0) (effects (font (size 1.4 1.4)) (justify left bottom)) (uuid "a81d01fb-45ae-5ba7-93b9-67711dfffa69"))
- (text "Gaiapus soil stake node - block diagram" (exclude_from_sim no) (at 35.56 20.32 0) (effects (font (size 3 3) bold) (justify left bottom)) (uuid "e75e0f45-f192-5313-91c3-e2ef739fea1f"))
- (text "Sheets connect through global labels and power symbols; arrows show the main signal groups (drawing only)." (exclude_from_sim no) (at 35.56 27.94 0) (effects (font (size 1.6 1.6)) (justify left bottom)) (uuid "ba307792-1d6c-5961-98bf-6c51870a35db"))
- (text "Generated by hardware/tools/gen_kicad.py" (exclude_from_sim no) (at 35.56 33.02 0) (effects (font (size 1.3 1.3)) (justify left bottom)) (uuid "d8bda488-e0e5-547a-bf7f-9a5ed10e4abb"))
- (sheet (at 35.56 109.22) (size 93.98 58.42) (fields_autoplaced yes)
-  (stroke (width 0.25) (type solid)) (fill (color 255 255 225 1.0000)) (uuid "9cb16a4a-aa5b-54b1-8ec0-e5d0e0b688a8")
-  (property "Sheetname" "Power" (at 35.56 108.52 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-  (property "Sheetfile" "power.kicad_sch" (at 35.56 168.34 0) (effects (font (size 1.27 1.27)) (justify left top)))
-  (instances (project "gaiapus-node" (path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8" (page "2")))))
- (sheet (at 165.1 109.22) (size 83.82 58.42) (fields_autoplaced yes)
-  (stroke (width 0.25) (type solid)) (fill (color 255 255 225 1.0000)) (uuid "3dcd2774-e7c4-52db-93ee-148d91a2d58e")
-  (property "Sheetname" "MCU" (at 165.1 108.52 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-  (property "Sheetfile" "mcu.kicad_sch" (at 165.1 168.34 0) (effects (font (size 1.27 1.27)) (justify left top)))
-  (instances (project "gaiapus-node" (path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8" (page "3")))))
- (sheet (at 289.56 109.22) (size 88.9 58.42) (fields_autoplaced yes)
-  (stroke (width 0.25) (type solid)) (fill (color 255 255 225 1.0000)) (uuid "3f76fe11-40e9-5591-a3a7-d57b323c9939")
-  (property "Sheetname" "LoRa" (at 289.56 108.52 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-  (property "Sheetfile" "lora.kicad_sch" (at 289.56 168.34 0) (effects (font (size 1.27 1.27)) (justify left top)))
-  (instances (project "gaiapus-node" (path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8" (page "4")))))
- (sheet (at 165.1 205.74) (size 83.82 55.88) (fields_autoplaced yes)
-  (stroke (width 0.25) (type solid)) (fill (color 255 255 225 1.0000)) (uuid "506e8b63-818c-54ea-b113-5eca631b66d1")
-  (property "Sheetname" "Sensors" (at 165.1 205.04 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-  (property "Sheetfile" "sensors.kicad_sch" (at 165.1 262.32 0) (effects (font (size 1.27 1.27)) (justify left top)))
-  (instances (project "gaiapus-node" (path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8" (page "5")))))
- (sheet (at 165.1 45.72) (size 83.82 38.1) (fields_autoplaced yes)
-  (stroke (width 0.25) (type solid)) (fill (color 255 255 225 1.0000)) (uuid "d8ef6a99-d0b7-59c1-8ac8-f188e34242f9")
-  (property "Sheetname" "Interface" (at 165.1 45.02 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-  (property "Sheetfile" "interface.kicad_sch" (at 165.1 84.52 0) (effects (font (size 1.27 1.27)) (justify left top)))
-  (instances (project "gaiapus-node" (path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8" (page "6")))))
- (sheet_instances (path "/" (page "1")))
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "03fc1a47-0af2-5cc0-ab88-f85d6738f3c8")
+	(paper "A3")
+	(title_block
+		(title "Gaiapus Node - Estaca de solo")
+		(date "2026-11-14")
+		(rev "A")
+		(company "Team Gaiapus · NASA Space Apps 2026")
+		(comment 1 "Field Shift: Adapting Farms with NASA Data")
+	)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 207.01 167.64) (xy 207.01 205.74)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "03119b89-46d6-527d-85d3-1b186c3b5f4a")
+	)
+	(polyline
+		(pts
+			(xy 207.01 83.82) (xy 207.01 109.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "2c647294-28d2-549e-af6f-435cc461c14c")
+	)
+	(polyline
+		(pts
+			(xy 82.55 74.77) (xy 82.55 109.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "71820ab0-83db-5aa2-94c6-1856553a383b")
+	)
+	(polyline
+		(pts
+			(xy 129.54 125.22) (xy 165.1 125.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "8ceadfc2-c9bb-5c51-bdf5-a2d010dd15f9")
+	)
+	(polyline
+		(pts
+			(xy 165.1 143.22) (xy 129.54 143.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "920f7e9c-dbee-533a-8849-b7911c62bad1")
+	)
+	(polyline
+		(pts
+			(xy 248.92 131.22) (xy 289.56 131.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(uuid "bb414737-fa06-5563-ae33-1f07437d7ba8")
+	)
+	(polyline
+		(pts
+			(xy 165.1 64.77) (xy 82.55 64.77) (xy 82.55 109.22)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3b2b20d6-3fbf-518d-a967-06feab9d773d)
+	)
+	(polyline
+		(pts
+			(xy 205.81 106.72) (xy 207.01 109.22) (xy 208.21 106.72)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 423206bb-1de6-5088-bd07-1733e350f733)
+	)
+	(polyline
+		(pts
+			(xy 208.21 170.14) (xy 207.01 167.64) (xy 205.81 170.14)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 506af6e4-93aa-524f-a7b9-dedeeac7a4da)
+	)
+	(polyline
+		(pts
+			(xy 81.35 106.72) (xy 82.55 109.22) (xy 83.75 106.72)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 621a0019-90c4-593d-98a0-4f686d492196)
+	)
+	(polyline
+		(pts
+			(xy 132.04 142.02) (xy 129.54 143.22) (xy 132.04 144.42)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cba0937f-3901-5e78-bc91-f315e9aa5b26)
+	)
+	(polyline
+		(pts
+			(xy 208.21 86.32) (xy 207.01 83.82) (xy 205.81 86.32)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d21b219a-47a9-5a70-adc5-928e0ea63f95)
+	)
+	(polyline
+		(pts
+			(xy 162.6 126.42) (xy 165.1 125.22) (xy 162.6 124.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid db122faa-3ce5-57c0-9d1b-fc4946689df9)
+	)
+	(polyline
+		(pts
+			(xy 287.06 132.42) (xy 289.56 131.22) (xy 287.06 130.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e39baed3-14b0-57a8-a772-6f80e8a2f45c)
+	)
+	(polyline
+		(pts
+			(xy 205.81 203.24) (xy 207.01 205.74) (xy 208.21 203.24)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ecf5f0b5-630a-5a3e-9d73-919634e91110)
+	)
+	(polyline
+		(pts
+			(xy 251.42 130.02) (xy 248.92 131.22) (xy 251.42 132.42)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f1f7e39b-e390-5154-b9e9-dd4a04a4ebc7)
+	)
+	(text "double-click to open"
+		(exclude_from_sim no)
+		(at 168.1 80.82 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "021e03f3-c261-5703-988f-9a9a99fd1431")
+	)
+	(text "USB-C (program / charge) + USBLC6-2SC6 ESD"
+		(exclude_from_sim no)
+		(at 168.1 53.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "03443c26-8608-59aa-a25c-d7beec665b41")
+	)
+	(text "TPS63802 buck-boost -> +3V3 (11 uA Iq)"
+		(exclude_from_sim no)
+		(at 38.56 133.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "133e7357-8314-5a1a-8422-0612c4b9c74d")
+	)
+	(text "Reset RC, USER/BOOT button (IO0)"
+		(exclude_from_sim no)
+		(at 168.1 128.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "20b9d83c-b038-58cf-a180-dd1eac3b70e4")
+	)
+	(text "Air T / RH: Sensirion SHT40 (I2C 0x44)"
+		(exclude_from_sim no)
+		(at 168.1 224.74 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b2cf663-6832-598d-97e5-a94901efcac5")
+	)
+	(text "Probe connector JST-SH 10P -> probe board"
+		(exclude_from_sim no)
+		(at 168.1 213.74 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b53776e-1894-5007-960b-b20e249d5ff3")
+	)
+	(text "Off-board: solar panel (JST-SH), 18650 cell in SMD holder"
+		(exclude_from_sim no)
+		(at 35.56 177.64 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c87394a-61fe-54ca-a0cf-1d01235c27af")
+	)
+	(text "ANT pad -> 0 ohm + pi-match (DNP) -> U.FL"
+		(exclude_from_sim no)
+		(at 292.56 128.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e6a9eb8-a755-5eb8-a207-9454ea05f569")
+	)
+	(text "Wi-Fi (bench/config), deep sleep ~25 uA"
+		(exclude_from_sim no)
+		(at 168.1 122.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e76749a-c12c-5815-ae78-dadde8fd1f5b")
+	)
+	(text "OSC15/40 frequency (PCNT)"
+		(exclude_from_sim no)
+		(at 209.01 174.64 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "67620602-600f-5e00-bf81-d732f9a220c1")
+	)
+	(text "ESP32-S3-MINI-1-N8"
+		(exclude_from_sim no)
+		(at 168.1 117.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "68541397-dbf2-5b71-a0f2-d3dac3746b06")
+	)
+	(text "VBAT sense: 2 x 2.2 Mohm divider"
+		(exclude_from_sim no)
+		(at 38.56 139.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bd1eb15-e6d4-5efa-8a99-575eb2d9fe77")
+	)
+	(text "NRST, TXEN, RXEN"
+		(exclude_from_sim no)
+		(at 250.92 134.72 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "708f0a18-7db4-58d0-82ff-2f27fd0e92a7")
+	)
+	(text "Probe board (22 x ~460 mm strip in 32 mm PVC tube, resin filled):"
+		(exclude_from_sim no)
+		(at 165.1 271.62 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "760eb7fb-0c3b-5a9b-97cc-c4168b691699")
+	)
+	(text "PWR_OSC / PWR_NTC (power gating)"
+		(exclude_from_sim no)
+		(at 209.01 188.14 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "80199beb-9b87-581a-bac5-19acbba4efff")
+	)
+	(text "CN3058E LiFePO4 charger, 51 mA"
+		(exclude_from_sim no)
+		(at 38.56 122.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c9a4332-59ae-5f5d-991f-7d4fe2278edf")
+	)
+	(text "Rain gauge: reed switch pulse (JST-SH)"
+		(exclude_from_sim no)
+		(at 168.1 230.24 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "98068014-176e-5616-a28d-18e05f2bc82c")
+	)
+	(text "VBUS (USB 5 V) -> solar input via Schottky"
+		(exclude_from_sim no)
+		(at 84.55 63.27 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e652b39-8c48-51e0-b49a-a7860182ad23")
+	)
+	(text "VBAT_ADC, CHG status"
+		(exclude_from_sim no)
+		(at 131.54 141.72 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ffae5f0-d292-5fda-9bbe-8d3ca139f6cb")
+	)
+	(text "  (separate project hardware/gaiapus-probe)"
+		(exclude_from_sim no)
+		(at 168.1 219.24 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "a019fffd-adb0-5936-b553-ac0b734ffcf2")
+	)
+	(text "interdigitated electrodes + 74LVC1G14 oscillators + NTC at 15 cm and 40 cm"
+		(exclude_from_sim no)
+		(at 165.1 276.62 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "a81d01fb-45ae-5ba7-93b9-67711dfffa69")
+	)
+	(text "18650 LiFePO4 + HY2112-BB / FS8205A protection"
+		(exclude_from_sim no)
+		(at 38.56 128.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "b2c05ccb-b47d-5ca6-8713-c86335561de1")
+	)
+	(text "UART test pads"
+		(exclude_from_sim no)
+		(at 168.1 133.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8869440-7340-5a01-b045-2b85a2c86e60")
+	)
+	(text "USB D+/D-, LED G/Y/R"
+		(exclude_from_sim no)
+		(at 209.01 91.82 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8e4339a-a194-5f8f-8a0b-d28d9897fdad")
+	)
+	(text "Sheets connect through global labels and power symbols; arrows show the main signal groups (drawing only)."
+		(exclude_from_sim no)
+		(at 35.56 27.94 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba307792-1d6c-5961-98bf-6c51870a35db")
+	)
+	(text "Status LEDs: green / yellow / red (light guide)"
+		(exclude_from_sim no)
+		(at 168.1 59.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba5a7306-0df1-5f75-a6b1-eaeaab4e8c84")
+	)
+	(text "EBYTE E22-900MM22S (Semtech SX1262)"
+		(exclude_from_sim no)
+		(at 292.56 117.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf9def9f-9b1f-5e9a-9d12-c243fa1262d5")
+	)
+	(text "SPI + NSS, BUSY, DIO1 (IRQ),"
+		(exclude_from_sim no)
+		(at 250.92 129.72 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "c72ed33b-6589-5ef4-86a6-c4ddaeebffee")
+	)
+	(text "Off-board: 915 MHz antenna (U.FL -> SMA)"
+		(exclude_from_sim no)
+		(at 289.56 177.64 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc4bb664-50c2-5fa7-9682-5a81aa6f43dd")
+	)
+	(text "915 MHz (AU915), up to 22 dBm"
+		(exclude_from_sim no)
+		(at 292.56 122.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0875659-0014-5e57-a1cc-1a9786d7e88d")
+	)
+	(text "Generated by hardware/tools/gen_kicad.py"
+		(exclude_from_sim no)
+		(at 35.56 33.02 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8bda488-e0e5-547a-bf7f-9a5ed10e4abb")
+	)
+	(text "NTC15/40 ADC, I2C (SHT40)"
+		(exclude_from_sim no)
+		(at 209.01 179.14 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "db7d21b7-0b17-50df-b602-f9e5a0ea7e0f")
+	)
+	(text "Solar 5 V 0.3 W (68x37 mm) -> BZT52C6V2 clamp"
+		(exclude_from_sim no)
+		(at 38.56 117.22 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5018184-f42c-5cf1-8bb8-dbea44cd140d")
+	)
+	(text "Gaiapus soil stake node - block diagram"
+		(exclude_from_sim no)
+		(at 35.56 20.32 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e75e0f45-f192-5313-91c3-e2ef739fea1f")
+	)
+	(text "double-click to open"
+		(exclude_from_sim no)
+		(at 292.56 164.64 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e76fa100-89af-5f4d-ba38-aae469627281")
+	)
+	(text "+3V3 to all blocks"
+		(exclude_from_sim no)
+		(at 131.54 123.72 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "eea26536-bdb6-5fe1-ae26-d13073aaf208")
+	)
+	(text "RAIN pulse (wake)"
+		(exclude_from_sim no)
+		(at 209.01 183.64 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "f13e01b3-cb26-524e-b2e3-b32e1a89743a")
+	)
+	(text "double-click to open"
+		(exclude_from_sim no)
+		(at 168.1 258.62 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f49fd968-18fc-5142-81eb-f760b8a60ef9")
+	)
+	(text "double-click to open"
+		(exclude_from_sim no)
+		(at 168.1 164.64 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6c958d1-e435-5af4-ab4f-a34bea47a599")
+	)
+	(text "double-click to open"
+		(exclude_from_sim no)
+		(at 38.56 164.64 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "f94c9060-49e3-57b5-ba3e-576750383685")
+	)
+	(text "pigtail to SMA bulkhead on the enclosure"
+		(exclude_from_sim no)
+		(at 292.56 133.72 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb026dcb-73a5-5988-8649-6002ac675fc6")
+	)
+	(sheet
+		(at 165.1 109.22)
+		(size 83.82 58.42)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 255 255 225 1.0000)
+		)
+		(uuid "3dcd2774-e7c4-52db-93ee-148d91a2d58e")
+		(property "Sheetname" "MCU"
+			(at 165.1 108.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 165.1 168.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gaiapus-node"
+				(path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 289.56 109.22)
+		(size 88.9 58.42)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 255 255 225 1.0000)
+		)
+		(uuid "3f76fe11-40e9-5591-a3a7-d57b323c9939")
+		(property "Sheetname" "LoRa"
+			(at 289.56 108.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lora.kicad_sch"
+			(at 289.56 168.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gaiapus-node"
+				(path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 205.74)
+		(size 83.82 55.88)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 255 255 225 1.0000)
+		)
+		(uuid "506e8b63-818c-54ea-b113-5eca631b66d1")
+		(property "Sheetname" "Sensors"
+			(at 165.1 205.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 165.1 262.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gaiapus-node"
+				(path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 109.22)
+		(size 93.98 58.42)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 255 255 225 1.0000)
+		)
+		(uuid "9cb16a4a-aa5b-54b1-8ec0-e5d0e0b688a8")
+		(property "Sheetname" "Power"
+			(at 35.56 108.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 35.56 168.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gaiapus-node"
+				(path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 45.72)
+		(size 83.82 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(color 255 255 225 1.0000)
+		)
+		(uuid "d8ef6a99-d0b7-59c1-8ac8-f188e34242f9")
+		(property "Sheetname" "Interface"
+			(at 165.1 45.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "interface.kicad_sch"
+			(at 165.1 84.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "gaiapus-node"
+				(path "/03fc1a47-0af2-5cc0-ab88-f85d6738f3c8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

@@ -133,7 +133,7 @@ class Router:
         for p in s.board["pads"]:
             if p.th: p.layers = set(LAYERS)
             for L in p.layers:
-                if L in LAYERS: s.copper.append((L, pad_shape(p), p.net, "pad:" + p.ref))
+                if L in LAYERS: s.copper.append((L, pad_shape(p), p.net or f"__npth_{p.ref}", ("hole:" if p.kind == "np_thru_hole" else "pad:") + p.ref))
         s.keepout = {L: np.zeros((s.g.H, s.g.W), bool) for L in LAYERS}
         s.segments, s.vias, s.zones, s.failed = [], [], [], []
         s.done_nets = set()
@@ -161,9 +161,10 @@ class Router:
         V = np.zeros((s.g.H, s.g.W), bool)
         for (L, sh, n, kind) in s.copper:
             if n == net: continue
-            if ignore_tracks and kind in ("track", "via") and short(n) != "GND": continue
+            if ignore_tracks and kind in ("track", "via") and short(n) not in s.fixed_nets(): continue
             # extra spacing (sensing node vs GND) only against tracks/vias and electrode copper, not IC pins
             ex = extra_clear(s.cfg, net, n) if kind in ("track", "via") else 0.0
+            if kind.startswith("hole:"): ex = max(ex, 0.25 - CLR)
             s.g.paint(B[L], sh, half + CLR + MARGIN + ex)
             s.g.paint(V, sh, VIA_D / 2 + CLR + MARGIN + ex)
         for L in LAYERS: V |= B[L]
@@ -195,7 +196,11 @@ class Router:
         blk = bytearray(np.concatenate([B[L].ravel() for L in LAYERS]).astype(np.uint8).tobytes())
         vblk = V.ravel().astype(np.uint8).tobytes()
         tset = set()
-        for (l, i, j) in targets: k = l * HW + i * W + j; tset.add(k); blk[k] = 0
+        for (l, i, j) in targets:
+            k = l * HW + i * W + j
+            if not blk[k]: tset.add(k)
+        if not tset:                                   # tiny pad fully inside foreign clearance: allow its cells
+            for (l, i, j) in targets: k = l * HW + i * W + j; tset.add(k); blk[k] = 0
         INF = float("inf")
         gs = {}; came = {}
         tc = list({(int(x), int(y)) for (x, y) in tgt_xy})
@@ -209,7 +214,8 @@ class Router:
                 if v < best: best = v
             return best * HWT
         pq = []
-        for (l, i, j) in sources:
+        srcs = [(l, i, j) for (l, i, j) in sources if not blk[l * HW + i * W + j]] or list(sources)
+        for (l, i, j) in srcs:
             k = l * HW + i * W + j; blk[k] = 0; gs[k] = 0.0; heapq.heappush(pq, (h(i, j), 0.0, k))
         PEN = float(os.environ.get("ROUTE_DIRPEN", "1.6"))
         IN = float(os.environ.get("ROUTE_INNER_COST", "1.4"))
@@ -327,6 +333,7 @@ class Router:
         if fails: print(f"  {short(net)} pads without a via to the plane:", fails)
         return fails
     # ---------------- rip-up and reroute ----------------
+    def fixed_nets(s): return set(s.cfg.get("planes", {}).values()) | {"GND"}     # stitching copper, never ripped
     def snapshot(s): return (list(s.segments), list(s.vias), list(s.copper), list(s.failed))
     def restore(s, snap): s.segments, s.vias, s.copper, s.failed = (list(x) for x in snap)
     def rip(s, net):
@@ -346,7 +353,7 @@ class Router:
         return None
     def conflicts(s, net, newcop):
         hits = set()
-        others = [c for c in s.copper if c[3] in ("track", "via") and c[2] != net and short(c[2]) != "GND"]
+        others = [c for c in s.copper if c[3] in ("track", "via") and c[2] != net and short(c[2]) not in s.fixed_nets()]
         for (L, sh, n, k) in newcop:
             A = s._as_seg(sh)
             if not A: continue
@@ -424,8 +431,7 @@ class Router:
         else:
             order = first + rest + gnd
         if os.environ.get("ROUTE_CONTINUE"):
-            s.failed = [n for n in order if n not in s.done_nets and n != "__GND_STUBS__" and short(n) not in (set(s.cfg.get("planes", {}).values()) | {"GND"})]
-            order = []
+            order = [n for n in order if n not in s.done_nets and n != "__GND_STUBS__" and short(n) not in (set(s.cfg.get("planes", {}).values()) | {"GND"})]
         order = [n for n in order if n not in s.done_nets]
         only = [x for x in os.environ.get("ROUTE_ONLY", "").split(",") if x]
         if only: order = [n for n in order if short(n) in only or n == "__GND_STUBS__"]

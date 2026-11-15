@@ -27,9 +27,10 @@ for f in os.listdir(PRETTY):
     if not f.endswith(".kicad_mod"):
         continue
     p = os.path.join(PRETTY, f); s = open(p, encoding="utf-8").read()
+    s = re.sub(r'\(pad ""\s+thru_hole\s+circle', '(pad "" np_thru_hole circle', s)   # locating holes: NPTH, not zero-ring PTH
     s2 = re.sub(r'\(model "[^"]*?([^"/\\]+\.(?:wrl|step|stp))"',
                 lambda m: '(model "${KIPRJMOD}/../lib/lcsc.3dshapes/' + m.group(1) + '"', s, flags=re.I)
-    if s2 != s:
+    if s2 != open(p, encoding="utf-8").read():
         open(p, "w", encoding="utf-8").write(s2); fixed += 1
 FILES = [f[:-10] for f in os.listdir(PRETTY) if f.endswith(".kicad_mod")]
 for lc, name in list(mapping.items()):          # the symbol's Footprint field can differ from the file name
@@ -51,7 +52,7 @@ SYMS_BY_LCSC = {  # LCSC -> symbol name in gen_kicad.py
     "C2913206": "ESP32-S3-MINI-1", "C5333985": "E22-900MM22S", "C112011": "CN3058E", "C161942": "HY2112-BB",
     "C5148694": "FS8205A", "C2845237": "TPS63802", "C2909890": "SHT40", "C131093": "74LVC1G14", "C13564": "NTC",
     "C165948": "USB_C_Receptacle", "C7519": "USBLC6-2SC6", "C2988620": "Battery_18650", "C88374": "U.FL",
-    "C160409": "JST_SH_10P"}
+    "C160409": "JST_SH_10P", "C18221164": "L", "C116501": "SW_Push", "C160402": "JST_SH_2P"}
 libtxt = open(os.path.join(LIB, "symbols", "gaiapus.kicad_sym"), encoding="utf-8").read()
 PAD_RE = re.compile(r'\(pad\s+"?([^"\s)]*)"?\s+(?:smd|thru_hole|np_thru_hole|connect)')
 PIN_RE = re.compile(r'\(name\s+"([^"]*)".*?\(number\s+"([^"]+)"', re.S)

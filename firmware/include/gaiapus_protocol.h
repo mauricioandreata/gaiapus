@@ -13,11 +13,13 @@
 #define GP_PROTOCOL_VERSION 1u
 #define GP_UPLINK_LEN       25u
 #define GP_DOWNLINK_LEN     2u
+#define GP_DOWNLINK_FRAME_LEN 6u   /* over the air: node_id (4) + downlink (2), see protocolo-dados.md */
 
 /* flags (byte 24) */
 #define GP_FLAG_BUTTON       0x01u  /* user pressed the button since last uplink */
 #define GP_FLAG_LOW_BATTERY  0x02u  /* vbat below threshold */
 #define GP_FLAG_SENSOR_ERROR 0x04u  /* at least one reading is invalid */
+#define GP_FLAG_CHARGING     0x08u  /* solar charger active at measurement time (informative) */
 
 /* sentinel for an invalid temperature reading (field also sets GP_FLAG_SENSOR_ERROR) */
 #define GP_TEMP_INVALID      INT16_MIN
@@ -115,6 +117,25 @@ static inline int gp_decode_downlink(const uint8_t *in, size_t len, gp_downlink_
     d->led = in[0] <= (uint8_t)GP_LED_RED ? in[0] : (uint8_t)GP_LED_OFF;
     d->interval_min = in[1] ? in[1] : 30;
     return 0;
+}
+
+/* LoRa downlink frame: every stake in range hears it, so the gateway prefixes the
+ * 2-byte command with the node_id of the stake it answers. The frame also acts as the
+ * delivery ACK of the uplink just sent (no frame = keep the measurement and resend). */
+static inline size_t gp_encode_downlink_frame(uint32_t node_id, const gp_downlink_t *d,
+                                              uint8_t out[GP_DOWNLINK_FRAME_LEN])
+{
+    gp_put32(out, node_id);
+    return 4 + gp_encode_downlink(d, out + 4);
+}
+
+/* Returns 0 on success, -1 on wrong length, -3 if the frame is for another node. */
+static inline int gp_decode_downlink_frame(const uint8_t *in, size_t len, uint32_t my_node_id,
+                                           gp_downlink_t *d)
+{
+    if (len != GP_DOWNLINK_FRAME_LEN) return -1;
+    if (gp_get32(in) != my_node_id) return -3;
+    return gp_decode_downlink(in + 4, GP_DOWNLINK_LEN, d);
 }
 
 #endif /* GAIAPUS_PROTOCOL_H */

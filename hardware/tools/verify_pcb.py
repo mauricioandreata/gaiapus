@@ -37,8 +37,8 @@ def main():
     bd = pm.load(path); t = bd["text"]; nets = bd["nets"]
     items = []   # (layerset, shape, net, kind, label)
     for p in bd["pads"]:
-        if p.net.startswith("unconnected") or not p.net: continue
-        items.append(((p.layers | {"In1", "In2"}) if p.th else p.layers, ("rect", p.x, p.y, p.w / 2, p.h / 2), p.net, "pad", f"{p.ref}.{p.num}"))
+        net = p.net or f"__npth_{p.ref}_{p.x:.2f}"           # unconnected / hole pads are still copper or holes
+        items.append(((p.layers | {"In1", "In2"}) if p.th else p.layers, ("rect", p.x, p.y, p.w / 2, p.h / 2), net, "hole" if p.kind == "np_thru_hole" else "pad", f"{p.ref}.{p.num or 'hole'}"))
     for m in re.finditer(r'\(segment \(start ([-\d.]+) ([-\d.]+)\) \(end ([-\d.]+) ([-\d.]+)\) \(width ([-\d.]+)\) \(layer "(F|B|In1|In2)\.Cu"\) \(net (\d+)\)', t):
         x1, y1, x2, y2, w = map(float, m.groups()[:5])
         items.append(({m.group(6)}, ("seg", (x1, y1), (x2, y2), w / 2), nets[int(m.group(7))], "track", f"track@{x1:.1f},{y1:.1f}"))
@@ -72,8 +72,9 @@ def main():
         if A[2] == B[2]:
             if d <= 1e-6: parent[find(i)] = find(j)
         else:
-            if A[3] == "pad" and B[3] == "pad" and A[4].split(".")[0] == B[4].split(".")[0]: continue   # same footprint: its own geometry
-            if d < CLR - 0.01: viol.append((round(d, 3), A[4], A[2].split('/')[-1], B[4], B[2].split('/')[-1]))
+            if A[3] in ("pad", "hole") and B[3] in ("pad", "hole") and A[4].split(".")[0] == B[4].split(".")[0]: continue   # same footprint
+            need = 0.25 if "hole" in (A[3], B[3]) else CLR
+            if d < need - 0.005: viol.append((round(d, 3), A[4], A[2].split('/')[-1], B[4], B[2].split('/')[-1]))
     # pads of the same footprint+number are one copper piece (electrode combs)
     first = {}
     for k, it in enumerate(items):
@@ -83,7 +84,7 @@ def main():
             else: first[key] = k
     unconn = {}
     for k, it in enumerate(items):
-        if it[3] != "pad": continue
+        if it[3] != "pad" or it[2].startswith(("unconnected", "__npth")): continue
         unconn.setdefault(it[2], set()).add(find(k))
     bad_nets = {n.split('/')[-1]: len(s) for n, s in unconn.items() if len(s) > 1}
     polys = pm.chain(bd["edge_polylines"]); edge = []

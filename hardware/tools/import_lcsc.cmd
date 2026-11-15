@@ -7,7 +7,8 @@ rem Then tell Claude "importei" - apply_lcsc.py fixes paths, checks pad numbers 
 python -m pip install --upgrade easyeda2kicad || goto :err
 python -m easyeda2kicad --full --overwrite --output "%~dp0..\lib\lcsc" --lcsc_id ^
  C2913206 C5333985 C112011 C161942 C5148694 C2845237 C2909890 C131093 ^
- C13564 C165948 C7519 C2988620 C88374 C160409 || goto :err
+ C13564 C165948 C7519 C2988620 C88374 C160409 ^
+ C18221164 C116501 C160402 || goto :err
 echo.
 echo OK - library written to hardware\lib\lcsc.*
 pause

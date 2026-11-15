@@ -11,7 +11,8 @@
 # Power paths (battery, solar, 3.3 V, buck-boost switch nodes): wide and short
 (rule "power nets"
   (condition "A.NetName == 'VBAT' || A.NetName == '+3V3' || A.NetName == 'VSOL' || A.NetName == 'VBUS' || A.NetName == '*BATT_N' || A.NetName == '*PROT_D' || A.NetName == '*SW_L*'")
-  (constraint track_width (min 0.2mm) (opt 0.5mm)))   # min = neck-down at the 0.3 mm TPS63802 pins
+# min 0.2 mm = neck-down at the 0.3 mm TPS63802 pins; widen elsewhere (opt 0.5 mm)
+  (constraint track_width (min 0.2mm) (opt 0.5mm)))
 # LoRa RF path: ANT pad -> 0R -> U.FL, microstrip on F.Cu over the solid In1 GND plane (prepreg ~0.21 mm).
 # 0.35 mm is an ESTIMATE for 50 ohm: confirm with the JLCPCB impedance calculator (4 layers, JLC04161H-7628).
 (rule "RF 50 ohm (estimate)"
