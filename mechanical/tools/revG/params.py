@@ -1,0 +1,130 @@
+"""Gaiapus head case rev G (= rev F + rain gauge + clamp) - shaped after renders/design-base-v1.jpg (rev E + team review 2026-11-15 13:29). All dimensions in mm.
+
+Case frame: origin = PCB centre (KiCad 145,125), x right, y toward the PCB FRONT edge, z up from the
+bottom face of the head (the neck/collar hangs below z = 0).
+"""
+import math
+KX, KY = 145.0, 125.0
+def k(x, y): return (round(x - KX, 2), round(y - KY, 2))
+t = lambda deg: math.tan(math.radians(deg))
+
+# ---------------- PCB (unchanged boards) ----------------
+PCB_W, PCB_H, PCB_T, PCB_R = 90.0, 50.0, 1.6, 4.0
+PCB_HOLES = [(-41, -21), (41, -21), (-41, 21), (41, 21)]
+Z_PCB_BOT = 42.0                       # PCB raised: frees the bottom for the tapered "chin"
+Z_PCB_TOP = Z_PCB_BOT + PCB_T
+H_TOP = {"J5 USB-C": 3.3, "J1/J4 JST-SH 2P": 3.0, "SW1 PTS810": 2.75, "U5 E22 LoRa": 2.55, "J3 JST-SH 10P": 2.49, "U4 ESP32-S3": 2.46}
+USBC = k(127.6, 144.4); USB_FACE_Y = 149.49 - KY
+SW1 = k(133.0, 127.6)
+LEDS = [k(137.6, 147.4), k(141.6, 147.4), k(145.6, 147.4)]
+J_PROBE, J_SOLAR, J_RAIN = k(114.0, 145.6), k(156.6, 146.2), k(167.6, 146.2)
+JST_FACE_Y = {"J3": 148.1 - KY, "J1": 148.7 - KY, "J4": 148.7 - KY}
+UFL, SHT40 = k(168.54, 104.3), k(180.0, 141.2)
+BATT_X = (102.0 - KX, 188.0 - KX); BATT_Y = (107.65 - KY, 128.35 - KY); BATT_CY = 118.0 - KY
+BATT_DROP, CELL_D = 21.0, 18.6
+CELL_ZC = Z_PCB_BOT - 1.2 - CELL_D / 2
+SW1_TOP = Z_PCB_TOP + H_TOP["SW1 PTS810"]
+LED_TOP = Z_PCB_TOP + 1.15                     # LED 3D model top (measured in the .glb)
+
+# ---------------- head: lower body ----------------
+WALL = 4.0
+IN_X, IN_Y0, IN_Y1 = 53.0, -49.5, 30.5
+OUT_X, OUT_Y0, OUT_Y1 = IN_X + WALL, IN_Y0 - WALL, IN_Y1 + WALL     # 114 x 88
+R_OUT, R_IN = 14.0, 10.0
+CY = (OUT_Y0 + OUT_Y1) / 2                       # -9.5 : tube axis
+CHIN = 20.0                                      # 45 deg tapered bottom ("chin"), 20 high / 20 in
+CHIN_R = 4.0                                     # blend radius of the chin edges
+SHELL = 3.5                                      # wall of the chin
+Z_SPLIT = 54.0                                   # seam (gasket)
+GROOVE_W, GROOVE_D, CORD_D = 2.2, 1.5, 2.0
+GROOVE_OFF = (WALL - GROOVE_W) / 2
+SEAM_V = 0.7                                     # small V at the seam, makes the line visible like the render
+
+# ---------------- head: cap (lid) ----------------
+CAP_DRAFT = 8.0                                  # sides and front lean in going up
+CAP_DRAFT_REAR = 3.0                             # rear face almost vertical: keeps the top long enough for the panel
+TOP_SLOPE = 15.0                                 # top falls toward the front (panel tilted 15 deg)
+ALPHA = math.radians(TOP_SLOPE)
+Z_TOP_REAR = 104.0                                # top at the rear outer edge
+def z_top(y): return Z_TOP_REAR - (y - OUT_Y0) * t(TOP_SLOPE)
+BEVEL_Z = 84.0                                   # above the front top: no flat bevel any more, the front edge is a round
+TOP_BLEND, BEVEL_BLEND = 5.0, 4.0
+CAP_WALL, ROOF_T = 3.5, 3.5
+LIP_T, LIP_H, LIP_GAP = 1.2, 2.0, 0.3
+
+# ---------------- fixing: 4 screws from below (hidden in the chin) ----------------
+SCREW_POS = [(-49.5, -46.0), (49.5, -46.0), (-49.5, 26.5), (49.5, 26.5)]
+COL_D, COL_HOLE, CB_D = 7.0, 3.4, 6.5
+CB_SEAT = 17.5                                   # counterbore seat height (screw head)
+Z_MEET = 24.0                                    # base column top = lid boss bottom
+INSERT_D, INSERT_L = 4.0, 7.0
+SCREW = "M3 x 12"
+SO_D, SO_PILOT, SO_PILOT_DEPTH = 6.0, 2.5, 8.0
+
+# ---------------- top features ----------------
+PANEL_W, PANEL_H, PANEL_T, PANEL_CLR, PANEL_REC = 87.0, 51.0, 3.2, 0.4, 1.6   # max envelope that fits the flat top (rev E 80 x 44, rev A-D 68 x 37)
+PANEL_C = (0.0, -17.18)                          # plan position of the panel centre, 2 mm behind the button
+PANEL_WIRE = (38.0, -17.18, 4.0)
+BTN_CAP_D, BTN_HOLE_D, BTN_FLANGE_D, BTN_FLANGE_T, BTN_POCKET_D, BTN_PROUD = 16.0, 16.4, 20.0, 1.0, 20.4, 1.5
+BTN_C = (0.0, 17.5)                              # as far forward as the flat top allows; diagonal arm to SW1
+BTN_TRAVEL_ROOM = 1.0
+PLUNGER_D, PLUNGER_FLAT, SLEEVE_GAP, SLEEVE_OD = 5.8, 2.2, 0.3, 9.6   # D-shaped stem (flat stops rotation)
+ARM_Z0, ARM_T, ARM_W = SW1_TOP + 1.25, 3.0, 5.0         # arm from the stem to SW1
+NUB_D = 3.6
+SLEEVE_Z0 = 58.0                                 # sleeve starts above the LED light pipes
+RIB_R, RIB_T = 10.0, 1.6
+
+# ---------------- front: LED light bar on the cap face ----------------
+LED_LENS = dict(xc=0.0, w=36.0, h=10.0, zc=66.0, r=3.0)        # smoked lens in the cap front
+LED_SPOT_X, LED_SPOT_D, LED_PIPE_D = (-11.0, 0.0, 11.0), 7.0, 3.5
+
+# ---------------- base openings / decoration ----------------
+USB_OPEN = (12.5, 7.0, 2.0); USB_Z = Z_PCB_BOT + 3.25
+VENT = dict(xc=0.0, n=9, pitch=4.4, w=2.2, z0=26.0, h=12.0, pocket=(44.0, 16.0, 1.5, 4.0))   # centred, below the USB-C
+DROP = None                                      # removed in rev E
+SMA = (30.0, -53.5, 46.0, 6.4)                   # REAR wall: x, y (outer face), z, hole d
+QR = (26.0, 26.0, 6.0, 37.0, 0.3)                # right wall: w, h, y, z, recess
+GLAND = (-28.5, 6.0, 8.2, 12.7)                  # M8 cable gland (rain gauge), bottom face front-left: clear of the neck clamp
+SLOT = (0.0, -15.0, 13.0, 6.0)
+
+# ---------------- neck, collar, stake ----------------
+NECK_D, NECK_BORE = 40.0, 28.0
+COLLAR_D, COLLAR_Z0, COLLAR_Z1, COLLAR_CH = 46.0, -32.0, -20.0, 1.5     # long neck (0..-20) then the collar ring
+SOCKET_D, SOCKET_DEPTH = 32.4, 22.0
+TUBE_OD, TUBE_ID, TUBE_LEN, TIP_LEN = 32.0, 27.0, 470.0, 60.0
+PROBE_W, PROBE_L, PROBE_T = 22.0, 450.0, 1.6
+PROBE_TOP_Z = None   # set below: 20 mm above the soil line (D18)
+PROBE_MAX_H = 2.49
+SOIL_Z = COLLAR_Z0
+PROBE_TOP_Z = SOIL_Z + 20.0
+ELEC_DEPTHS, ELEC_H = (150.0, 400.0), 40.0
+
+# ---------------- sloped-top local frame ----------------
+def to_local(y, z, y_r):
+    """(y, z) -> (s along the slope toward the front, h above the top plane) around the plan point y_r"""
+    zr = z_top(y_r); c, sn = math.cos(ALPHA), math.sin(ALPHA)
+    return (y - y_r) * c - (z - zr) * sn, (y - y_r) * sn + (z - zr) * c
+def from_local(s, h, y_r):
+    zr = z_top(y_r); c, sn = math.cos(ALPHA), math.sin(ALPHA)
+    return y_r + s * c + h * sn, zr - s * sn + h * c
+
+# ---------------- rain gauge (tipping bucket) + neck clamp ----------------
+# gauge local frame: origin = centre of the body floor underside, z up; placed beside the head on the LEFT (QR is on the right)
+RG = dict(
+    pos=(-124.0, -9.5, 10.0),         # case coords of the local origin (sits on the clamp platform); rim at z 105 > head top 104
+    body_od=104.0, wall=2.5, floor=3.0, h=80.0,
+    rim_d=100.0, rim_z=95.0,          # funnel cone 42.5 deg (prints rim-down without support)
+    skirt_od=109.0, skirt_z0=70.0, nozzle_z=48.0, nozzle_d=6.0, nozzle_id=3.0, funnel_t=2.0,
+    pin_z=24.0, pin_d=2.0, post_y=13.5, post_t=3.0,
+    bk_L=24.0, bk_H=12.0, bk_W=20.0, bk_a=4.0, bk_t=1.2, tilt=16.8,          # rest tilt set by the stop screws (calibration)
+    mag_d=6.0, mag_h=3.0, tab_z=-16.0, mag_zc=-12.5,   # disc magnet magnetised along x (axis = swing direction), glued in a side pocket
+    reed=(16.0, 2.4, 2.5), reed_top=4.0,  # glass reed along x, 4 mm under the magnet at mid-swing
+    stop_x=23.0, stop_top=29.5, stop_d=7.0,
+    drain_x=30.0, drain_d=8.0,
+    screw_r=28.0, screw_ang=(90.0, 210.0, 330.0),
+    cable=(0.0, 12.0, 8.2),             # angle (deg, 0 = toward the stake), z, hole d (M8 gland)
+)
+CLAMP = dict(bore=40.4, od=50.0, z0=-19.9, z1=-6.0,     # sits on the collar shoulder (z -20)
+             gap=0.6, tab_r=(20.0, 31.0), tab_x=6.0, bolt_r=26.5, bolt_d=3.4, nut_af=5.6,
+             arm_w=10.0, plat_d=70.0, plat_t=6.0, post_d=24.0)   # post + 45 deg cone lift the platform (print with the clamp face on the bed)
+RG_MM_PER_PULSE = 0.2                 # design target; calibrate (see drawings sheet 4)

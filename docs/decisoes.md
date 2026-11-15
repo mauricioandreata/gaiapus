@@ -142,3 +142,41 @@ Componentes com código LCSC recebem footprint e modelo 3D do próprio LCSC via 
 - **`gateway_id` em cada uplink:** dá a área aproximada (raio do gateway comunitário) e permite alertar estaca ouvida por gateway inesperado (movida/furtada). Rádio não dá posição: RSSI/SNR só indicam qualidade do enlace e P2P não permite triangular.
 - **Botão na instalação:** envia na hora e o app confirma "conectada via gateway X". Teste de campo no próprio ato de instalar.
 - **Rev B:** GPS ou acelerômetro se for preciso detectar movimento sem depender do gateway.
+
+## 2026-11-15 · D24 · Case rev C: follow the design render (replaces D23 shape)
+- **Why:** rev B was a flat 38 mm box, far from `renders/design-base-v1.jpg`.
+- **Decision:** near-cubic head 114 x 88 x 98: straight lower body + tall cap (sides 8 deg, rear 3 deg, top falls 6 deg to the front, front bevel), seam with a visible V at z 54, 45 deg "chin" into a long neck D40 and a collar ring D46. LED bar on the cap front (smoked PETG light guide over the 3 LEDs); button D16 with power icon on the top in front of the panel, pressed through a PETG plunger in a guide sleeve; recessed vertical grille + raised drop on the lower front; QR on the right side; hinged antenna rear-right. Boards unchanged: PCB raised to z 42 on taller standoffs.
+- **Kept from rev B:** 7 mm plug room in front of the JSTs, 4 screws from below (now hidden in the chin, M3 x 12 into lid-boss inserts), silicone cord at the seam, probe cable through the neck, probe 20 mm above the soil line.
+- **Changed:** rain cable gland PG7 -> M8 (PG7 does not fit beside the neck).
+- **Checks:** 21/21 geometric checks + 3D interference against the .glb board models: all clear, 0 mm3 overlap between parts.
+- **Source of truth:** `mechanical/tools/revC/params.py` + `parts.py` (signed-distance solids -> 3MF, GLB, drawings).
+
+## 2026-11-15 · D25 · Case rev D: team review of rev C
+- **Top tilted 15 deg** (was 6): 104 mm at the rear, 80.4 at the front. Panel recess and button follow the sloped plane.
+- **Antenna on the rear wall** (SMA x 30, z 46) with the hinged whip standing up behind the head.
+- **Power button centred on the panel axis** (x 0, in front of the panel). SW1 stays at x -12 on the PCB: a PETG plunger with a D-shaped stem (no rotation) in a guide sleeve hung from the roof by 4 ribs, and an arm with a nub 0.3 mm above SW1.
+- **Bigger LEDs:** 36 x 10 smoked lens on the cap front with three D7 lights 11 mm apart, fed by 3 light pipes from the 0603 LEDs (4 mm pitch).
+- **Ventilation grille centred and larger:** 9 slots 2.2 x 12 in a 44 x 16 pocket below the USB-C; drop beside it at x 31.
+- **Trade-off:** the SHT40 is at x +35; with the grille centred, outside air reaches it through the cavity, so the air reading reacts more slowly. If the field test shows too much lag, add a small duct from the grille to the SHT40 island.
+- **Checks:** 26/26 + 3D interference (all board parts clear, 0 mm3 overlap between printed parts).
+
+## 2026-11-15 · D26 · Case rev E: second team review
+- **Drop removed** next to the grille (grille unchanged: centred, 9 slots in 44 x 16).
+- **Power button moved toward the front** (plan y 9, still on the panel axis x 0). The PETG arm now runs diagonally from the stem to SW1 (x -12, y 2.6). Front bevel starts at z 80 (blend 5) so the button sits on the flat top.
+- **Bigger solar panel:** recess 80.8 x 44.8 for a panel up to 80 x 44 x 3.2 (+40 % area vs 68 x 37; largest size that fits the flat sloped top was 83 x 43). **To do:** pick the commercial panel and update BOM SP1; the old 68 x 37 still fits.
+- **LED lights follow the cap:** the three D7 lights are areas of the lens face itself (the lens follows the curved, drafted cap), not flat inserts.
+- **Checks:** 27/27 + 3D interference (all board parts clear, 0 mm3 overlap).
+
+## 2026-11-15 · D27 · Case rev F: button further forward, bigger panel
+- **Power button** moved to plan y 17.5 (panel axis x 0), the furthest position where its rim still sits on the flat top (found by `tools/revF/search.py`).
+- **Solar panel** recess 87.8 x 51.8 for a panel up to 87 x 51 x 3.2: +26 % vs rev E, +76 % vs the original 68 x 37. **To do:** choose the commercial panel and update BOM SP1.
+- To free the flat area: front bevel replaced by a round edge (R~5), side blends 5 mm (were 6).
+- Button guide sleeve now starts at z 58 so it clears the LED light pipes; ribs R10.
+- **Checks:** 27/27 + 3D interference (all board parts clear, 0 mm3 overlap).
+
+## 2026-11-15 · D28 · Rev G: rain gauge (tipping bucket) and neck clamp
+- **Mounting:** the soil line is the collar bottom, so no tube is left above ground for a clamp as in the render. The clamp hugs the **neck D40** and rests on the collar; an arm carries the gauge 124 mm to the **left** (the QR stays visible on the right). Rim at z 105, 1 mm above the head top, so the head does not shadow the collector (answers design-produto.md item 4).
+- **Gauge:** collector D100 (7854 mm2), body D104 x 80, funnel 42.5 deg (prints rim-down), bucket 2 x wedge 24 x 20 on a D2 stainless pin, reed switch NO + magnet D6 x 3 magnetised along the swing, 2 drains D8, M8 gland to the head.
+- **Resolution: 0.2 mm per pulse** (computed 1.58 mL per tip = 0.201 mm at rest tilt 16.8 deg). Field calibration: 100 mL slowly, mm/pulse = 12.73 / N, adjust both stop screws (1 turn = +-0.013 mm/pulse), store the factor in firmware (`rain_mm_per_pulse`).
+- **Head change:** M8 gland moved from x 26, y -24 to x -28.5, y 6 (clear of the clamp ring), with a D14.8 spot-face for the nut.
+- **Checks:** 36/36 + 3D interference (board parts clear; gauge, clamp and head 0 mm3 overlap; bucket clears the body at both rest positions).
