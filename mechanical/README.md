@@ -23,8 +23,8 @@ Exporte a PCB do KiCad em STEP (Arquivo > Exportar > STEP) para encaixar no CAD.
 | `drawings/checks-revG.md` | 36 checks (head + gauge), 3D interference of the board models, gauge/clamp pairwise overlaps (all 0 mm3), tip-volume table |
 | `cad/revG/gaiapus-revG-*.3mf` | printable parts in print orientation: head (base, lid, button, plunger, light bar, tip) + **rg-body, rg-funnel (rim down), rg-bucket (on its side), clamp-a, clamp-b** |
 | `cad/revG/gaiapus-stake-revG-assembly.glb` | whole stake with boards, gauge (bucket at rest, magnet, reed, pin, stop screws), clamp, bolts and the gauge cable to the head gland |
-| `cad/revG/renders/` | comparison with the design render, head + gauge views, gauge section, full stake |
-| `tools/revG/` | generators: `raingauge.py` (gauge + clamp solids), `rg_tip.py` (tip volume -> mm/pulse), `interference_rg.py`, `make_all.sh` |
+| `cad/revG/renders/` | **exploded view with 21 numbered parts (`exploded-revG.png`)**, comparison with the design render, head + gauge views, gauge section, full stake |
+| `tools/revG/` | generators: `raingauge.py` (gauge + clamp solids), `rg_tip.py` (tip volume -> mm/pulse), `interference_rg.py`, `explode.py` (exploded view), `make_all.sh` |
 
 **Rain gauge:** tipping bucket, collector D100 (7854 mm2), **0.201 mm per pulse** (1.58 mL per tip, computed from the bucket model with the water and magnet moments), rest tilt 16.8 deg set by two M3 stop screws (1 turn = 1.2 deg = +-0.013 mm/pulse). Reed switch NO + magnet D6 x 3 (axis along the swing) -> J4 RAIN (GPIO17 wake). Funnel cone 42.5 deg, prints rim-down without support. Rim at z 105, 1 mm above the head top, on the LEFT side (QR stays visible on the right).
 **Clamp:** two halves around the neck D40, resting on the collar; half A carries a 124 mm arm and a hollow 45 deg post with the D70 platform; 2 x M3 x 16 + nuts. The head M8 gland moved to x -28.5, y 6 (clear of the clamp ring) with a flat spot-face for the nut.
